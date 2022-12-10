@@ -1,1216 +1,1296 @@
-Uri: https://client.crisp.chat/l.js?ver=5.9.3
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\l.js
+Uri: https://client.crisp.chat/l.js?ver=5.9.5
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\l.js
 Content Type: application/javascript
 
-Uri: https://fonts.googleapis.com/css?family=Montserrat:100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=auto&ver=5.9.3
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\css-1
+Uri: https://fonts.googleapis.com/css?family=Montserrat:normal&ver=1.4.2
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\css
 Content Type: text/css
 
-Uri: https://fonts.googleapis.com/css?family=Montserrat:normal&ver=1.4.2
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\css
+Uri: https://fonts.googleapis.com/css?family=Roboto:100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic|Roboto+Slab:100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic|Montserrat:100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=auto&ver=5.9.5
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\css-1
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css?family=Roboto:100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic|Roboto+Slab:100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=auto&ver=5.9.5
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\css-2
 Content Type: text/css
 
 Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq0N6WXh0ow.ttf
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq0N6WXh0ow.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq0N6WXh0ow.ttf
 Content Type: font/ttf
 
 Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq3p6WXh0ow.ttf
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq3p6WXh0ow.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq3p6WXh0ow.ttf
 Content Type: font/ttf
 
 Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq5Z9WXh0ow.ttf
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq5Z9WXh0ow.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq5Z9WXh0ow.ttf
 Content Type: font/ttf
 
 Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R8WXh0ow.ttf
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R8WXh0ow.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R8WXh0ow.ttf
 Content Type: font/ttf
 
 Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R9WXh0ow.ttf
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R9WXh0ow.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R9WXh0ow.ttf
 Content Type: font/ttf
 
 Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqw16WXh0ow.ttf
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqw16WXh0ow.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqw16WXh0ow.ttf
 Content Type: font/ttf
 
 Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR6WXh0ow.ttf
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR6WXh0ow.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR6WXh0ow.ttf
 Content Type: font/ttf
 
 Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR9WXh0ow.ttf
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR9WXh0ow.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR9WXh0ow.ttf
 Content Type: font/ttf
 
 Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq_p9WXh0ow.ttf
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq_p9WXh0ow.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\montserrat\v25\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq_p9WXh0ow.ttf
 Content Type: font/ttf
 
 Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw5aX8.ttf
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw5aX8.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw5aX8.ttf
 Content Type: font/ttf
 
 Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aX8.ttf
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aX8.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aX8.ttf
 Content Type: font/ttf
 
 Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw5aX8.ttf
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw5aX8.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw5aX8.ttf
 Content Type: font/ttf
 
 Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw5aX8.ttf
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw5aX8.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw5aX8.ttf
 Content Type: font/ttf
 
 Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w5aX8.ttf
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w5aX8.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w5aX8.ttf
 Content Type: font/ttf
 
 Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w5aX8.ttf
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w5aX8.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w5aX8.ttf
 Content Type: font/ttf
 
 Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC73w5aX8.ttf
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC73w5aX8.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC73w5aX8.ttf
 Content Type: font/ttf
 
 Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr6Hw5aX8.ttf
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr6Hw5aX8.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr6Hw5aX8.ttf
 Content Type: font/ttf
 
 Uri: https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr73w5aX8.ttf
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr73w5aX8.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr73w5aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOiCnqEu92Fr1Mu51QrEzAdKg.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\roboto\v30\KFOiCnqEu92Fr1Mu51QrEzAdKg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51S7ACc6CsE.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\roboto\v30\KFOjCnqEu92Fr1Mu51S7ACc6CsE.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TjASc6CsE.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\roboto\v30\KFOjCnqEu92Fr1Mu51TjASc6CsE.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TLBCc6CsE.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\roboto\v30\KFOjCnqEu92Fr1Mu51TLBCc6CsE.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TzBic6CsE.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\roboto\v30\KFOjCnqEu92Fr1Mu51TzBic6CsE.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxIIzc.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\roboto\v30\KFOkCnqEu92Fr1MmgVxIIzc.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1Mu51xIIzc.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\roboto\v30\KFOkCnqEu92Fr1Mu51xIIzc.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc9.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\roboto\v30\KFOlCnqEu92Fr1MmEU9fBBc9.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc9.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\roboto\v30\KFOlCnqEu92Fr1MmSU5fBBc9.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc9.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\roboto\v30\KFOlCnqEu92Fr1MmWUlfBBc9.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtfBBc9.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\roboto\v30\KFOlCnqEu92Fr1MmYUtfBBc9.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxP.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\roboto\v30\KFOmCnqEu92Fr1Mu4mxP.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSmb2Rm.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\robotoslab\v24\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoa4Omb2Rm.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\robotoslab\v24\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoa4Omb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDIOmb2Rm.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\robotoslab\v24\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDIOmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDISmb2Rm.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\robotoslab\v24\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDISmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\robotoslab\v24\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojIWmb2Rm.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\robotoslab\v24\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojIWmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoJYOmb2Rm.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\robotoslab\v24\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoJYOmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoUoOmb2Rm.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\robotoslab\v24\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoUoOmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjovoSmb2Rm.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\s\robotoslab\v24\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjovoSmb2Rm.ttf
 Content Type: font/ttf
 
 Uri: https://www.racekon.com/
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\index.htm
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\index.htm
 Content Type: text/html
 
 Uri: https://www.racekon.com/10-kg-ac-synchronous-motor/
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\10-kg-ac-synchronous-motor\index.htm
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\10-kg-ac-synchronous-motor\index.htm
 Content Type: text/html
 
 Uri: https://www.racekon.com/14-kg-ac-synchronous-motor/
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\14-kg-ac-synchronous-motor\index.htm
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\14-kg-ac-synchronous-motor\index.htm
 Content Type: text/html
 
 Uri: https://www.racekon.com/2-kg-ac-synchronous-motor/
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\2-kg-ac-synchronous-motor\index.htm
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\2-kg-ac-synchronous-motor\index.htm
 Content Type: text/html
 
 Uri: https://www.racekon.com/20-kg-ac-synchronous-motor/
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\20-kg-ac-synchronous-motor\index.htm
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\20-kg-ac-synchronous-motor\index.htm
 Content Type: text/html
 
 Uri: https://www.racekon.com/28-kg-ac-synchronous-motor/
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\28-kg-ac-synchronous-motor\index.htm
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\28-kg-ac-synchronous-motor\index.htm
 Content Type: text/html
 
 Uri: https://www.racekon.com/3-kg-ac-synchronous-motor/
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\3-kg-ac-synchronous-motor\index.htm
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\3-kg-ac-synchronous-motor\index.htm
 Content Type: text/html
 
 Uri: https://www.racekon.com/40-kg-ac-synchronous-motor/
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\40-kg-ac-synchronous-motor\index.htm
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\40-kg-ac-synchronous-motor\index.htm
 Content Type: text/html
 
 Uri: https://www.racekon.com/60-kg-ac-synchronous-motor/
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\60-kg-ac-synchronous-motor\index.htm
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\60-kg-ac-synchronous-motor\index.htm
 Content Type: text/html
 
 Uri: https://www.racekon.com/7-kg-ac-synchronous-motor/
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\7-kg-ac-synchronous-motor\index.htm
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\7-kg-ac-synchronous-motor\index.htm
 Content Type: text/html
 
 Uri: https://www.racekon.com/80-kg-ac-synchronous-motor/
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\80-kg-ac-synchronous-motor\index.htm
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\80-kg-ac-synchronous-motor\index.htm
 Content Type: text/html
 
 Uri: https://www.racekon.com/about-us/
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\about-us\index.htm
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\about-us\index.htm
 Content Type: text/html
 
 Uri: https://www.racekon.com/ac-synchronous-geared-motor/
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\ac-synchronous-geared-motor\index.htm
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\ac-synchronous-geared-motor\index.htm
 Content Type: text/html
 
 Uri: https://www.racekon.com/comments/feed/
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\comments\feed\index.htm
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\comments\feed\index.htm
 Content Type: application/rss+xml
 
 Uri: https://www.racekon.com/contact/
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\contact\index.htm
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\contact\index.htm
 Content Type: text/html
 
 Uri: https://www.racekon.com/dc-stepping-motor/
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\dc-stepping-motor\index.htm
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\dc-stepping-motor\index.htm
 Content Type: text/html
 
 Uri: https://www.racekon.com/feed/
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\feed\index.htm
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\feed\index.htm
 Content Type: application/rss+xml
 
 Uri: https://www.racekon.com/network-support/
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\network-support\index.htm
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\network-support\index.htm
 Content Type: text/html
 
 Uri: https://www.racekon.com/pmdc-motors/
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\pmdc-motors\index.htm
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\pmdc-motors\index.htm
 Content Type: text/html
 
 Uri: https://www.racekon.com/quality-policy/
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\quality-policy\index.htm
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\quality-policy\index.htm
 Content Type: text/html
 
 Uri: https://www.racekon.com/solid-yoke-dc-motors/
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\solid-yoke-dc-motors\index.htm
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\solid-yoke-dc-motors\index.htm
 Content Type: text/html
 
 Uri: https://www.racekon.com/warranty/
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\warranty\index.htm
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\warranty\index.htm
 Content Type: text/html
 
-Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_34c2a19858042c924762999919126657.css
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_34c2a19858042c924762999919126657.css
+Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_3b50b5f84eef94852bf2285699d00d70.css
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_3b50b5f84eef94852bf2285699d00d70.css
 Content Type: text/css
 
-Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_3b50b5f84eef94852bf2285699d00d70.css
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_3b50b5f84eef94852bf2285699d00d70.css
+Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_dfbdf34f569ed2bd21aea2799009aac2.css
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_dfbdf34f569ed2bd21aea2799009aac2.css
 Content Type: text/css
 
 Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_eb53e585d88e7e4f1c726af9c30bd04b.css
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_eb53e585d88e7e4f1c726af9c30bd04b.css
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_eb53e585d88e7e4f1c726af9c30bd04b.css
 Content Type: text/css
 
-Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_0194568c381d3c0c68d8849c6ce6780d.css?ver=1647674510
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_0194568c381d3c0c68d8849c6ce6780d.css
+Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_0194568c381d3c0c68d8849c6ce6780d.css?ver=1661102386
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_0194568c381d3c0c68d8849c6ce6780d.css
 Content Type: text/css
 
-Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_276f9eae1a6dcac5f38b0c563233f863.css?ver=1647674405
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_276f9eae1a6dcac5f38b0c563233f863.css
+Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_276f9eae1a6dcac5f38b0c563233f863.css?ver=1660848160
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_276f9eae1a6dcac5f38b0c563233f863.css
 Content Type: text/css
 
-Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_2c8b7196dd227ae01876f6ad1faf3da3.css?ver=1647673324
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_2c8b7196dd227ae01876f6ad1faf3da3.css
+Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_2c8b7196dd227ae01876f6ad1faf3da3.css?ver=1661043681
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_2c8b7196dd227ae01876f6ad1faf3da3.css
 Content Type: text/css
 
-Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_33bab1c4d79f040cd9f87f2d7dfcc4fe.css?ver=1647674573
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_33bab1c4d79f040cd9f87f2d7dfcc4fe.css
+Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_33bab1c4d79f040cd9f87f2d7dfcc4fe.css?ver=1661102390
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_33bab1c4d79f040cd9f87f2d7dfcc4fe.css
 Content Type: text/css
 
-Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_4cda1e8d641e580179bde2ed2e60fac6.css?ver=1647674157
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_4cda1e8d641e580179bde2ed2e60fac6.css
+Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_4cda1e8d641e580179bde2ed2e60fac6.css?ver=1660848136
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_4cda1e8d641e580179bde2ed2e60fac6.css
 Content Type: text/css
 
-Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_5edccc52d61e52814257e218adc47bb6.css?ver=1647673340
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_5edccc52d61e52814257e218adc47bb6.css
+Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_5edccc52d61e52814257e218adc47bb6.css?ver=1660848153
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_5edccc52d61e52814257e218adc47bb6.css
 Content Type: text/css
 
-Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_66cd9b0fde86d955cc4ca5cdcb41cc8f.css?ver=1647674687
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_66cd9b0fde86d955cc4ca5cdcb41cc8f.css
+Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_66cd9b0fde86d955cc4ca5cdcb41cc8f.css?ver=1660883014
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_66cd9b0fde86d955cc4ca5cdcb41cc8f.css
 Content Type: text/css
 
-Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_87fa9ff237c3e6d6d79f7c3ca81464ed.css?ver=1647674619
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_87fa9ff237c3e6d6d79f7c3ca81464ed.css
+Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_87fa9ff237c3e6d6d79f7c3ca81464ed.css?ver=1661012425
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_87fa9ff237c3e6d6d79f7c3ca81464ed.css
 Content Type: text/css
 
-Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_b564066a624b6c367a9a59ab6966ee5f.css?ver=1647538675
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_b564066a624b6c367a9a59ab6966ee5f.css
+Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_93ff19a6395e68b2c8dbf7c62545105a.css?ver=1660843784
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_93ff19a6395e68b2c8dbf7c62545105a.css
 Content Type: text/css
 
-Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_be823826bf3667f94d445ec573a9b1fc.css?ver=1647538674
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_be823826bf3667f94d445ec573a9b1fc.css
+Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_b564066a624b6c367a9a59ab6966ee5f.css?ver=1660848162
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_b564066a624b6c367a9a59ab6966ee5f.css
 Content Type: text/css
 
-Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_c0f95fb444ed8c86c381cc6f7247938e.css?ver=1647542456
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_c0f95fb444ed8c86c381cc6f7247938e.css
+Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_be823826bf3667f94d445ec573a9b1fc.css?ver=1660843785
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_be823826bf3667f94d445ec573a9b1fc.css
 Content Type: text/css
 
-Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_cfbd45cb25d0583ff04f6b527fd3b60a.css?ver=1647549204
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_cfbd45cb25d0583ff04f6b527fd3b60a.css
+Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_c0f95fb444ed8c86c381cc6f7247938e.css?ver=1660848166
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_c0f95fb444ed8c86c381cc6f7247938e.css
 Content Type: text/css
 
-Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_d6336079226f79b04fabdb41df56bc71.css?ver=1647754711
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_d6336079226f79b04fabdb41df56bc71.css
+Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_cfbd45cb25d0583ff04f6b527fd3b60a.css?ver=1660877981
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_cfbd45cb25d0583ff04f6b527fd3b60a.css
 Content Type: text/css
 
-Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_d7dbf97853c830f1f1b5214c0c4af3ed.css?ver=1647544197
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_d7dbf97853c830f1f1b5214c0c4af3ed.css
+Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_d6336079226f79b04fabdb41df56bc71.css?ver=1661076613
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_d6336079226f79b04fabdb41df56bc71.css
 Content Type: text/css
 
-Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_e517b8ae11a6c4d756d4cc6d39156aa2.css?ver=1647539218
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_e517b8ae11a6c4d756d4cc6d39156aa2.css
+Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_d7dbf97853c830f1f1b5214c0c4af3ed.css?ver=1660846719
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_d7dbf97853c830f1f1b5214c0c4af3ed.css
 Content Type: text/css
 
-Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_e9cf05ab126853b3001d2dc209c99fed.css?ver=1647539205
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_e9cf05ab126853b3001d2dc209c99fed.css
+Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_e517b8ae11a6c4d756d4cc6d39156aa2.css?ver=1660882945
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_e517b8ae11a6c4d756d4cc6d39156aa2.css
 Content Type: text/css
 
-Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_f2da81d1b5dca10751e68b06742471ad.css?ver=1647539229
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_f2da81d1b5dca10751e68b06742471ad.css
+Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_e9cf05ab126853b3001d2dc209c99fed.css?ver=1660843785
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_e9cf05ab126853b3001d2dc209c99fed.css
+Content Type: text/css
+
+Uri: https://www.racekon.com/wp-content/cache/autoptimize/css/autoptimize_single_f2da81d1b5dca10751e68b06742471ad.css?ver=1660848173
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\cache\autoptimize\css\autoptimize_single_f2da81d1b5dca10751e68b06742471ad.css
 Content Type: text/css
 
 Uri: https://www.racekon.com/wp-content/cache/autoptimize/js/autoptimize_36b2de9a9d5208e511dfb47c270af0f3.js
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\cache\autoptimize\js\autoptimize_36b2de9a9d5208e511dfb47c270af0f3.js
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\cache\autoptimize\js\autoptimize_36b2de9a9d5208e511dfb47c270af0f3.js
 Content Type: application/x-javascript
 
 Uri: https://www.racekon.com/wp-content/cache/autoptimize/js/autoptimize_629770c9af1f915c1dc1db0deb91c611.js
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\cache\autoptimize\js\autoptimize_629770c9af1f915c1dc1db0deb91c611.js
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\cache\autoptimize\js\autoptimize_629770c9af1f915c1dc1db0deb91c611.js
 Content Type: application/x-javascript
 
 Uri: https://www.racekon.com/wp-content/cache/autoptimize/js/autoptimize_8952fdd4c936939cae0449eb6e6b5d46.js
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\cache\autoptimize\js\autoptimize_8952fdd4c936939cae0449eb6e6b5d46.js
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\cache\autoptimize\js\autoptimize_8952fdd4c936939cae0449eb6e6b5d46.js
 Content Type: application/x-javascript
 
 Uri: https://www.racekon.com/wp-content/cache/autoptimize/js/autoptimize_ab3f921f1f6e01d19dcbfd8d86290ce1.js
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\cache\autoptimize\js\autoptimize_ab3f921f1f6e01d19dcbfd8d86290ce1.js
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\cache\autoptimize\js\autoptimize_ab3f921f1f6e01d19dcbfd8d86290ce1.js
 Content Type: application/x-javascript
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.14.0
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons.eot
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons.eot
 Content Type: application/vnd.ms-fontobject
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.14.0
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons.svg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons.svg
 Content Type: image/svg+xml
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.14.0
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons.ttf
 Content Type: application/x-font-ttf
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.14.0
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons.woff2
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons.woff2
 Content Type: font/woff2
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.14.0
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons.woff
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons.woff
 Content Type: application/font-woff
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/font-awesome/fonts/fontawesome-webfont.eot?
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\fonts\fontawesome-webfont-1.eot
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\fonts\fontawesome-webfont-1.eot
 Content Type: application/vnd.ms-fontobject
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\fonts\fontawesome-webfont.eot
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\fonts\fontawesome-webfont.eot
 Content Type: application/vnd.ms-fontobject
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\fonts\fontawesome-webfont.svg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\fonts\fontawesome-webfont.svg
 Content Type: image/svg+xml
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\fonts\fontawesome-webfont.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\fonts\fontawesome-webfont.ttf
 Content Type: application/x-font-ttf
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\fonts\fontawesome-webfont.woff2
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\fonts\fontawesome-webfont.woff2
 Content Type: font/woff2
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\fonts\fontawesome-webfont.woff
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\fonts\fontawesome-webfont.woff
 Content Type: application/font-woff
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.eot
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-brands-400.eot
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-brands-400.eot
 Content Type: application/vnd.ms-fontobject
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.eot?
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-brands-400-1.eot
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-brands-400-1.eot
 Content Type: application/vnd.ms-fontobject
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.svg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-brands-400.svg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-brands-400.svg
 Content Type: image/svg+xml
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.ttf
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-brands-400.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-brands-400.ttf
 Content Type: application/x-font-ttf
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.woff
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-brands-400.woff
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-brands-400.woff
 Content Type: application/font-woff
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.woff2
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-brands-400.woff2
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-brands-400.woff2
 Content Type: font/woff2
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.eot
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-regular-400.eot
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-regular-400.eot
 Content Type: application/vnd.ms-fontobject
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.eot?
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-regular-400-1.eot
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-regular-400-1.eot
 Content Type: application/vnd.ms-fontobject
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.svg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-regular-400.svg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-regular-400.svg
 Content Type: image/svg+xml
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.ttf
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-regular-400.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-regular-400.ttf
 Content Type: application/x-font-ttf
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.woff
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-regular-400.woff
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-regular-400.woff
 Content Type: application/font-woff
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.woff2
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-regular-400.woff2
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-regular-400.woff2
 Content Type: font/woff2
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.eot
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-solid-900.eot
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-solid-900.eot
 Content Type: application/vnd.ms-fontobject
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.eot?
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-solid-900-1.eot
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-solid-900-1.eot
 Content Type: application/vnd.ms-fontobject
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.svg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-solid-900.svg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-solid-900.svg
 Content Type: image/svg+xml
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.ttf
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-solid-900.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-solid-900.ttf
 Content Type: application/x-font-ttf
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-solid-900.woff
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-solid-900.woff
 Content Type: application/font-woff
 
 Uri: https://www.racekon.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff2
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-solid-900.woff2
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-solid-900.woff2
 Content Type: font/woff2
 
 Uri: https://www.racekon.com/wp-content/plugins/essential-addons-for-elementor-lite/assets/admin/images/templately/logo-icon.svg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\essential-addons-for-elementor-lite\assets\admin\images\templately\logo-icon.svg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\essential-addons-for-elementor-lite\assets\admin\images\templately\logo-icon.svg
 Content Type: image/svg+xml
 
 Uri: https://www.racekon.com/wp-content/plugins/godaddy-email-marketing-sign-up-forms/images/spinner-2x.gif
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\godaddy-email-marketing-sign-up-forms\images\spinner-2x.gif
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\godaddy-email-marketing-sign-up-forms\images\spinner-2x.gif
 Content Type: image/gif
 
 Uri: https://www.racekon.com/wp-content/plugins/godaddy-email-marketing-sign-up-forms/images/spinner.gif
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\plugins\godaddy-email-marketing-sign-up-forms\images\spinner.gif
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\plugins\godaddy-email-marketing-sign-up-forms\images\spinner.gif
 Content Type: image/gif
 
 Uri: https://www.racekon.com/wp-content/themes/astra/assets/fonts/astra.svg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\themes\astra\assets\fonts\astra.svg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\themes\astra\assets\fonts\astra.svg
 Content Type: image/svg+xml
 
 Uri: https://www.racekon.com/wp-content/themes/astra/assets/fonts/astra.ttf
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\themes\astra\assets\fonts\astra.ttf
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\themes\astra\assets\fonts\astra.ttf
 Content Type: application/x-font-ttf
 
 Uri: https://www.racekon.com/wp-content/themes/astra/assets/fonts/astra.woff
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\themes\astra\assets\fonts\astra.woff
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\themes\astra\assets\fonts\astra.woff
 Content Type: application/font-woff
 
 Uri: https://www.racekon.com/wp-content/uploads/2018/07/A129-Why-Choose-Us-300x78.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2018\07\A129-Why-Choose-Us-300x78.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2018\07\A129-Why-Choose-Us-300x78.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2018/07/A129-Why-Choose-Us-768x200.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2018\07\A129-Why-Choose-Us-768x200.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2018\07\A129-Why-Choose-Us-768x200.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2018/07/A129-Why-Choose-Us.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2018\07\A129-Why-Choose-Us.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2018\07\A129-Why-Choose-Us.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2018/07/cropped-IMG_20180725_125405-2-180x180.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2018\07\cropped-IMG_20180725_125405-2-180x180.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2018\07\cropped-IMG_20180725_125405-2-180x180.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2018/07/cropped-IMG_20180725_125405-2-192x192.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2018\07\cropped-IMG_20180725_125405-2-192x192.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2018\07\cropped-IMG_20180725_125405-2-192x192.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2018/07/cropped-IMG_20180725_125405-2-32x32.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2018\07\cropped-IMG_20180725_125405-2-32x32.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2018\07\cropped-IMG_20180725_125405-2-32x32.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2019/10/10kg-gear-side-1024x731.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2019\10\10kg-gear-side-1024x731.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2019\10\10kg-gear-side-1024x731.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2019/10/10kg-gear-side-300x214.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2019\10\10kg-gear-side-300x214.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2019\10\10kg-gear-side-300x214.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2019/10/10kg-gear-side-768x549.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2019\10\10kg-gear-side-768x549.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2019\10\10kg-gear-side-768x549.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2019/10/2kg-1024x731.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2019\10\2kg-1024x731.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2019\10\2kg-1024x731.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2019/10/2kg-300x214.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2019\10\2kg-300x214.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2019\10\2kg-300x214.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2019/10/2kg-768x549.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2019\10\2kg-768x549.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2019\10\2kg-768x549.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2019/10/2kg.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2019\10\2kg.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2019\10\2kg.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2019/10/4-1-2-1024x731.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2019\10\4-1-2-1024x731.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2019\10\4-1-2-1024x731.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2019/10/4-1-2-300x214.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2019\10\4-1-2-300x214.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2019\10\4-1-2-300x214.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2019/10/4-1-2-768x549.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2019\10\4-1-2-768x549.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2019\10\4-1-2-768x549.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2019/10/4-1-2.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2019\10\4-1-2.jpg
-Content Type: image/jpeg
-
-Uri: https://www.racekon.com/wp-content/uploads/2019/10/5-1024x731.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2019\10\5-1024x731.jpg
-Content Type: image/jpeg
-
-Uri: https://www.racekon.com/wp-content/uploads/2019/10/5-300x214.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2019\10\5-300x214.jpg
-Content Type: image/jpeg
-
-Uri: https://www.racekon.com/wp-content/uploads/2019/10/5-768x549.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2019\10\5-768x549.jpg
-Content Type: image/jpeg
-
-Uri: https://www.racekon.com/wp-content/uploads/2019/10/5.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2019\10\5.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2019\10\4-1-2.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2019/10/images-5-290x300.jpeg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2019\10\images-5-290x300.jpeg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2019\10\images-5-290x300.jpeg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2019/10/images-5.jpeg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2019\10\images-5.jpeg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2019\10\images-5.jpeg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2019/10/IMG-20191006-WA0046-300x125.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2019\10\IMG-20191006-WA0046-300x125.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2019\10\IMG-20191006-WA0046-300x125.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2019/10/IMG-20191006-WA0046.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2019\10\IMG-20191006-WA0046.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2019\10\IMG-20191006-WA0046.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/02/perfect-300x104.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\02\perfect-300x104.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\02\perfect-300x104.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/02/perfect-768x267.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\02\perfect-768x267.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\02\perfect-768x267.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/02/perfect.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\02\perfect.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\02\perfect.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/02-1024x373.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\02-1024x373.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\02-1024x373.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/02-300x109.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\02-300x109.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\02-300x109.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/02-768x279.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\02-768x279.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\02-768x279.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/02.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\02.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\02.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/1-3-300x212.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\1-3-300x212.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\1-3-300x212.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/1-3.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\1-3.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\1-3.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/100-1-300x228.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\100-1-300x228.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\100-1-300x228.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/100-1.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\100-1.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\100-1.png
 Content Type: image/png
 
-Uri: https://www.racekon.com/wp-content/uploads/2020/04/121212121212.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\121212121212.jpg
-Content Type: image/jpeg
-
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/2-1-300x225.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\2-1-300x225.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\2-1-300x225.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/2-1.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\2-1.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\2-1.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/3-1-300x218.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\3-1-300x218.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\3-1-300x218.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/3-1.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\3-1.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\3-1.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/4-300x223.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\4-300x223.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\4-300x223.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/4.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\4.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\4.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/40-300x221.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\40-300x221.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\40-300x221.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/40.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\40.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\40.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/5-300x229.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\5-300x229.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\5-300x229.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/5.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\5.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\5.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/50-300x231.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\50-300x231.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\50-300x231.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/50.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\50.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\50.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/85585585555558558558585-300x240.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\85585585555558558558585-300x240.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\85585585555558558558585-300x240.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/85585585555558558558585.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\85585585555558558558585.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\85585585555558558558585.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/enquiry-1024x284.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\enquiry-1024x284.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\enquiry-1024x284.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/enquiry-300x83.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\enquiry-300x83.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\enquiry-300x83.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/enquiry-768x213.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\enquiry-768x213.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\enquiry-768x213.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/enquiry.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\enquiry.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\enquiry.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/racold_aboutus_new-1024x336.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\racold_aboutus_new-1024x336.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\racold_aboutus_new-1024x336.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/racold_aboutus_new-300x98.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\racold_aboutus_new-300x98.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\racold_aboutus_new-300x98.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/racold_aboutus_new-768x252.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\racold_aboutus_new-768x252.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\racold_aboutus_new-768x252.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/04/racold_aboutus_new.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\04\racold_aboutus_new.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\04\racold_aboutus_new.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/05/01198999967885-1-1024x312.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\05\01198999967885-1-1024x312.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\05\01198999967885-1-1024x312.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/05/01198999967885-1-300x92.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\05\01198999967885-1-300x92.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\05\01198999967885-1-300x92.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/05/01198999967885-1-768x234.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\05\01198999967885-1-768x234.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\05\01198999967885-1-768x234.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/05/01198999967885-1.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\05\01198999967885-1.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\05\01198999967885-1.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/05/25-1024x133.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\05\25-1024x133.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\05\25-1024x133.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/05/25-300x39.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\05\25-300x39.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\05\25-300x39.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/05/25-768x100.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\05\25-768x100.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\05\25-768x100.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/05/25.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\05\25.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\05\25.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/05/Capture-1-150x150.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\05\Capture-1-150x150.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\05\Capture-1-150x150.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/05/Capture-2-150x150.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\05\Capture-2-150x150.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\05\Capture-2-150x150.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/05/Capture-3-150x150.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\05\Capture-3-150x150.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\05\Capture-3-150x150.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/05/Capture-4-150x150.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\05\Capture-4-150x150.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\05\Capture-4-150x150.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/05/Capture-5-150x150.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\05\Capture-5-150x150.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\05\Capture-5-150x150.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/05/images-150x150.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\05\images-150x150.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\05\images-150x150.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/06/Ice-Recruitment-Contact-Banner-1-1024x576.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\06\Ice-Recruitment-Contact-Banner-1-1024x576.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\06\Ice-Recruitment-Contact-Banner-1-1024x576.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/06/Ice-Recruitment-Contact-Banner-1-300x169.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\06\Ice-Recruitment-Contact-Banner-1-300x169.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\06\Ice-Recruitment-Contact-Banner-1-300x169.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/06/Ice-Recruitment-Contact-Banner-1-768x432.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\06\Ice-Recruitment-Contact-Banner-1-768x432.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\06\Ice-Recruitment-Contact-Banner-1-768x432.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/06/Ice-Recruitment-Contact-Banner-1.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\06\Ice-Recruitment-Contact-Banner-1.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\06\Ice-Recruitment-Contact-Banner-1.jpg
 Content Type: image/jpeg
 
-Uri: https://www.racekon.com/wp-content/uploads/2020/10/pizza.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\10\pizza.png
-Content Type: image/png
-
 Uri: https://www.racekon.com/wp-content/uploads/2020/10/pokemon3-300x225.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\10\pokemon3-300x225.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\10\pokemon3-300x225.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/10/pokemon3.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\10\pokemon3.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\10\pokemon3.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/11/10RPS-1-300x221.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\11\10RPS-1-300x221.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\11\10RPS-1-300x221.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/11/10RPS-1.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\11\10RPS-1.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\11\10RPS-1.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/11/15KG-MOTOR-300x283.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\11\15KG-MOTOR-300x283.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\11\15KG-MOTOR-300x283.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/11/15KG-MOTOR.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\11\15KG-MOTOR.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\11\15KG-MOTOR.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/11/800-300x252.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\11\800-300x252.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\11\800-300x252.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/11/800-768x646.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\11\800-768x646.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\11\800-768x646.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/11/800.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\11\800.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\11\800.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/11/FIX-300x188.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\11\FIX-300x188.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\11\FIX-300x188.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/11/FIX.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\11\FIX.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\11\FIX.png
 Content Type: image/png
 
-Uri: https://www.racekon.com/wp-content/uploads/2020/11/LGAO-MOTOR-1.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\11\LGAO-MOTOR-1.png
+Uri: https://www.racekon.com/wp-content/uploads/2020/11/LGAO-MOTOR.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\11\LGAO-MOTOR.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/11/plz-300x238.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\11\plz-300x238.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\11\plz-300x238.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/11/plz-768x610.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\11\plz-768x610.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\11\plz-768x610.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/11/plz.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\11\plz.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\11\plz.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/12/FASE.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\12\FASE.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\12\FASE.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/12/OK-KRO-1024x509.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\12\OK-KRO-1024x509.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\12\OK-KRO-1024x509.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/12/OK-KRO-300x149.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\12\OK-KRO-300x149.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\12\OK-KRO-300x149.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/12/OK-KRO-768x381.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\12\OK-KRO-768x381.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\12\OK-KRO-768x381.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/12/OK-KRO.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\12\OK-KRO.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\12\OK-KRO.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/12/OK-removebg-preview-1-1024x468.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\12\OK-removebg-preview-1-1024x468.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\12\OK-removebg-preview-1-1024x468.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/12/OK-removebg-preview-1-300x137.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\12\OK-removebg-preview-1-300x137.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\12\OK-removebg-preview-1-300x137.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/12/OK-removebg-preview-1-768x351.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\12\OK-removebg-preview-1-768x351.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\12\OK-removebg-preview-1-768x351.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2020/12/OK-removebg-preview-1.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2020\12\OK-removebg-preview-1.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2020\12\OK-removebg-preview-1.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/2021/01/cropped-250.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\2021\01\cropped-250.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2021\01\cropped-250.png
 Content Type: image/png
 
+Uri: https://www.racekon.com/wp-content/uploads/2022/08/20KG-ROTOR.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2022\08\20KG-ROTOR.jpg
+Content Type: image/jpeg
+
+Uri: https://www.racekon.com/wp-content/uploads/2022/08/yup-scaled.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\2022\08\yup-scaled.jpg
+Content Type: image/jpeg
+
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/01-oovttqcskye5igs2t8oeqyjgmwgc9f3pvb2jzx5708.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\01-oovttqcskye5igs2t8oeqyjgmwgc9f3pvb2jzx5708.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\01-oovttqcskye5igs2t8oeqyjgmwgc9f3pvb2jzx5708.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/1-4-oo0mzj5f8onpp04dnly7pa5b6c4d1ak1475gm92c40.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\1-4-oo0mzj5f8onpp04dnly7pa5b6c4d1ak1475gm92c40.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\1-4-oo0mzj5f8onpp04dnly7pa5b6c4d1ak1475gm92c40.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/100-percent-ooyzahns1ideyby3udbdtxyy579sfb1w42duz53smk.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\100-percent-ooyzahns1ideyby3udbdtxyy579sfb1w42duz53smk.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\100-percent-ooyzahns1ideyby3udbdtxyy579sfb1w42duz53smk.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/1212121212-ooyyyl1dh22nw58pd81i8y4r9hyexbsah4wg4yrbfw.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\1212121212-ooyyyl1dh22nw58pd81i8y4r9hyexbsah4wg4yrbfw.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\1212121212-ooyyyl1dh22nw58pd81i8y4r9hyexbsah4wg4yrbfw.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/1212121212121212121212-oovu9qjuyeax7fj4cnqppf50s3kcbvn6eiz76jev20.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\1212121212121212121212-oovu9qjuyeax7fj4cnqppf50s3kcbvn6eiz76jev20.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\1212121212121212121212-oovu9qjuyeax7fj4cnqppf50s3kcbvn6eiz76jev20.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/3-oo0l6xoqjn9vfqm8f2iv0f4mmmsivn2i3cotnvsl2k.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\3-oo0l6xoqjn9vfqm8f2iv0f4mmmsivn2i3cotnvsl2k.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\3-oo0l6xoqjn9vfqm8f2iv0f4mmmsivn2i3cotnvsl2k.png
 Content Type: image/png
 
+Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/90--scaled-ptggm363qk6eod0jnq70jsxox6b9qqiqf136v49hso.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\90--scaled-ptggm363qk6eod0jnq70jsxox6b9qqiqf136v49hso.jpg
+Content Type: image/jpeg
+
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/fianl-2-ooyzwdci5la5ljhyig137l1iuj54s4yjxhk4stpmfk.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\fianl-2-ooyzwdci5la5ljhyig137l1iuj54s4yjxhk4stpmfk.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\fianl-2-ooyzwdci5la5ljhyig137l1iuj54s4yjxhk4stpmfk.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/final-1-1-ooyzw30a2ew01twz6tk6y5ngbak3fgti82dsis4yc0.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\final-1-1-ooyzw30a2ew01twz6tk6y5ngbak3fgti82dsis4yc0.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\final-1-1-ooyzw30a2ew01twz6tk6y5ngbak3fgti82dsis4yc0.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/final-3-ooyzwnoq8rob592xu2hzh0fldrq64t3lmwqh2vaaj4.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\final-3-ooyzwnoq8rob592xu2hzh0fldrq64t3lmwqh2vaaj4.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\final-3-ooyzwnoq8rob592xu2hzh0fldrq64t3lmwqh2vaaj4.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/PLZ-PASTE-oovt5jy8sdamvjwdzsfvm26mk3mg9p49vmyxlozr20.png
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\PLZ-PASTE-oovt5jy8sdamvjwdzsfvm26mk3mg9p49vmyxlozr20.png
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\PLZ-PASTE-oovt5jy8sdamvjwdzsfvm26mk3mg9p49vmyxlozr20.png
 Content Type: image/png
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/rsp-1-oe50hsorookex60ml2mtpmeay0qyt41hs0jhc2e2g8.jpeg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-1-oe50hsorookex60ml2mtpmeay0qyt41hs0jhc2e2g8.jpeg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-1-oe50hsorookex60ml2mtpmeay0qyt41hs0jhc2e2g8.jpeg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/rsp-1-oe50htmlvilp8rz9fl1ga45rjemc0t58456ytccoa0.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-1-oe50htmlvilp8rz9fl1ga45rjemc0t58456ytccoa0.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-1-oe50htmlvilp8rz9fl1ga45rjemc0t58456ytccoa0.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/rsp-10-oe50i4wo5j1543ivlpwz41bao12ql6e05p0sknvy7c.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-10-oe50i4wo5j1543ivlpwz41bao12ql6e05p0sknvy7c.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-10-oe50i4wo5j1543ivlpwz41bao12ql6e05p0sknvy7c.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/rsp-11-oe50i6scj73prbg5aqq890u7usth0klgtybrj7t5uw.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-11-oe50i6scj73prbg5aqq890u7usth0klgtybrj7t5uw.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-11-oe50i6scj73prbg5aqq890u7usth0klgtybrj7t5uw.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/rsp-12-oe50i7q6q1502xes594utilog6ou89p762z90hrroo.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-12-oe50i7q6q1502xes594utilog6ou89p762z90hrroo.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-12-oe50i7q6q1502xes594utilog6ou89p762z90hrroo.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/rsp-13-oe50i8o0wv6aejdezrjhe0d51kk7fysxi7mqhrqdig.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-13-oe50i8o0wv6aejdezrjhe0d51kk7fysxi7mqhrqdig.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-13-oe50i8o0wv6aejdezrjhe0d51kk7fysxi7mqhrqdig.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/rsp-14-oe50iajpaj8v1raooscqizw28caxvd0e6gxpgbnl60.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-14-oe50iajpaj8v1raooscqizw28caxvd0e6gxpgbnl60.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-14-oe50iajpaj8v1raooscqizw28caxvd0e6gxpgbnl60.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/rsp-15-oe50ibhjhda5dd9bjard3hnitq6b3244ill6xlm6zs.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-15-oe50ibhjhda5dd9bjard3hnitq6b3244ill6xlm6zs.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-15-oe50ibhjhda5dd9bjard3hnitq6b3244ill6xlm6zs.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/rsp-16-oe50icfdo7bfoz7ydt5znzezf41oar7uuq8oevkstk.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-16-oe50icfdo7bfoz7ydt5znzezf41oar7uuq8oevkstk.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-16-oe50icfdo7bfoz7ydt5znzezf41oar7uuq8oevkstk.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/rsp-17-oe50ieb21ve0c7582tz8syxwlvseq5fbizjndfi0h4.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-17-oe50ieb21ve0c7582tz8syxwlvseq5fbizjndfi0h4.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-17-oe50ieb21ve0c7582tz8syxwlvseq5fbizjndfi0h4.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/rsp-18-oe50if8w8pfant3uxcdvdgpd79nrxuj1v474upgmaw.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-18-oe50if8w8pfant3uxcdvdgpd79nrxuj1v474upgmaw.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-18-oe50if8w8pfant3uxcdvdgpd79nrxuj1v474upgmaw.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/rsp-19-oe50ig6qfjgkzf2hrushxygtsnj55jms78umbzf84o.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-19-oe50ig6qfjgkzf2hrushxygtsnj55jms78umbzf84o.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-19-oe50ig6qfjgkzf2hrushxygtsnj55jms78umbzf84o.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/rsp-2-oe50hukg2cmzkdxwa3g2ulx84shp8i8yg9ugamba3s.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-2-oe50hukg2cmzkdxwa3g2ulx84shp8i8yg9ugamba3s.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-2-oe50hukg2cmzkdxwa3g2ulx84shp8i8yg9ugamba3s.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/rsp-20-oe50ii2et7j5mmzrgvlr2xzqzf9vkxu8vi5lajcfs8.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-20-oe50ii2et7j5mmzrgvlr2xzqzf9vkxu8vi5lajcfs8.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-20-oe50ii2et7j5mmzrgvlr2xzqzf9vkxu8vi5lajcfs8.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/rsp-21-oe50ij0901kfy8yebe0dnfr7kt58smxz7mt2rtb1m0.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-21-oe50ij0901kfy8yebe0dnfr7kt58smxz7mt2rtb1m0.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-21-oe50ij0901kfy8yebe0dnfr7kt58smxz7mt2rtb1m0.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/rsp-22-oe50ijy36vlq9ux15wf07xio670m0c1pjrgk939nfs.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-22-oe50ijy36vlq9ux15wf07xio670m0c1pjrgk939nfs.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-22-oe50ijy36vlq9ux15wf07xio670m0c1pjrgk939nfs.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/rsp-23-oe50iltrkjoax2uaux89cx1lcyrcfq9680rj7n6v3c.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-23-oe50iltrkjoax2uaux89cx1lcyrcfq9680rj7n6v3c.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-23-oe50iltrkjoax2uaux89cx1lcyrcfq9680rj7n6v3c.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/rsp-24-oe50imrlrdpl8osxpfmvxet1ycmpnfcwk5f0ox5gx4.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-24-oe50imrlrdpl8osxpfmvxet1ycmpnfcwk5f0ox5gx4.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-24-oe50imrlrdpl8osxpfmvxet1ycmpnfcwk5f0ox5gx4.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/rsp-3-oe50hwg4g0pk7lv5z49bzlg5bk8fnwgf4j5f968hrc.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-3-oe50hwg4g0pk7lv5z49bzlg5bk8fnwgf4j5f968hrc.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-3-oe50hwg4g0pk7lv5z49bzlg5bk8fnwgf4j5f968hrc.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/rsp-4-oe50hxdymuquj7tstmnyk37lwy3svlk5gnswqg73l4.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-4-oe50hxdymuquj7tstmnyk37lwy3svlk5gnswqg73l4.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-4-oe50hxdymuquj7tstmnyk37lwy3svlk5gnswqg73l4.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/rsp-5-oe50hybstos4utsfo52l4kz2ibz63anvssge7q5pew.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-5-oe50hybstos4utsfo52l4kz2ibz63anvssge7q5pew.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-5-oe50hybstos4utsfo52l4kz2ibz63anvssge7q5pew.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/rsp-6-oe50i07h7cupi1ppd5vu9khzp3pwiovch1rd6a2x2g.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-6-oe50i07h7cupi1ppd5vu9khzp3pwiovch1rd6a2x2g.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-6-oe50i07h7cupi1ppd5vu9khzp3pwiovch1rd6a2x2g.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/rsp-7-oe50i15be6vztnoc7oagu29gahl9qdz2t6eunk1iw8.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-7-oe50i15be6vztnoc7oagu29gahl9qdz2t6eunk1iw8.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-7-oe50i15be6vztnoc7oagu29gahl9qdz2t6eunk1iw8.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/rsp-8-oe50i30zruykgvllwp3pz1sdh9c05s6jhfptm3yqjs.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-8-oe50i30zruykgvllwp3pz1sdh9c05s6jhfptm3yqjs.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-8-oe50i30zruykgvllwp3pz1sdh9c05s6jhfptm3yqjs.jpg
 Content Type: image/jpeg
 
 Uri: https://www.racekon.com/wp-content/uploads/elementor/thumbs/rsp-9-oe50i3ytyozushk8r7icjjju2n7ddha9tkdb3dxcdk.jpg
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-9-oe50i3ytyozushk8r7icjjju2n7ddha9tkdb3dxcdk.jpg
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\elementor\thumbs\rsp-9-oe50i3ytyozushk8r7icjjju2n7ddha9tkdb3dxcdk.jpg
 Content Type: image/jpeg
 
-Uri: https://www.racekon.com/wp-content/uploads/essential-addons-elementor/f3bccc972.min.css?ver=1660841768
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-content\uploads\essential-addons-elementor\f3bccc972.min.css
+Uri: https://www.racekon.com/wp-content/uploads/essential-addons-elementor/f3bccc972.min.css?ver=1670692055
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-content\uploads\essential-addons-elementor\f3bccc972.min.css
 Content Type: text/css
 
 Uri: https://www.racekon.com/wp-includes/wlwmanifest.xml
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-includes\wlwmanifest.xml
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-includes\wlwmanifest.xml
 Content Type: application/xml
 
 Uri: https://www.racekon.com/wp-json/
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\index.htm
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\index.htm
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2F
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2F&format=xml
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-1
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-1
 Content Type: text/xml
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2F10-kg-ac-synchronous-motor%2F
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-10
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-10
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2F10-kg-ac-synchronous-motor%2F&format=xml
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-11
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-11
 Content Type: text/xml
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2F14-kg-ac-synchronous-motor%2F
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-12
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-12
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2F14-kg-ac-synchronous-motor%2F&format=xml
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-13
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-13
 Content Type: text/xml
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2F2-kg-ac-synchronous-motor%2F
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-4
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-4
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2F2-kg-ac-synchronous-motor%2F&format=xml
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-5
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-5
 Content Type: text/xml
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2F20-kg-ac-synchronous-motor%2F
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-14
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-14
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2F20-kg-ac-synchronous-motor%2F&format=xml
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-15
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-15
 Content Type: text/xml
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2F28-kg-ac-synchronous-motor%2F
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-16
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-16
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2F28-kg-ac-synchronous-motor%2F&format=xml
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-17
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-17
 Content Type: text/xml
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2F3-kg-ac-synchronous-motor%2F
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-6
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-6
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2F3-kg-ac-synchronous-motor%2F&format=xml
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-7
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-7
 Content Type: text/xml
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2F40-kg-ac-synchronous-motor%2F
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-18
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-18
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2F40-kg-ac-synchronous-motor%2F&format=xml
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-19
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-19
 Content Type: text/xml
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2F60-kg-ac-synchronous-motor%2F
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-20
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-20
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2F60-kg-ac-synchronous-motor%2F&format=xml
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-21
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-21
 Content Type: text/xml
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2F7-kg-ac-synchronous-motor%2F
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-8
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-8
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2F7-kg-ac-synchronous-motor%2F&format=xml
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-9
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-9
 Content Type: text/xml
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2F80-kg-ac-synchronous-motor%2F
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-22
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-22
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2F80-kg-ac-synchronous-motor%2F&format=xml
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-23
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-23
 Content Type: text/xml
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2Fabout-us%2F
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-2
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-2
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2Fabout-us%2F&format=xml
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-3
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-3
 Content Type: text/xml
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2Fac-synchronous-geared-motor%2F
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-24
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-24
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2Fac-synchronous-geared-motor%2F&format=xml
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-25
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-25
 Content Type: text/xml
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2Fcontact%2F
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-38
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-38
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2Fcontact%2F&format=xml
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-39
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-39
 Content Type: text/xml
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2Fdc-stepping-motor%2F
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-26
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-26
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2Fdc-stepping-motor%2F&format=xml
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-27
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-27
 Content Type: text/xml
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2Fnetwork-support%2F
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-36
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-36
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2Fnetwork-support%2F&format=xml
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-37
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-37
 Content Type: text/xml
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2Fpmdc-motors%2F
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-28
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-28
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2Fpmdc-motors%2F&format=xml
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-29
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-29
 Content Type: text/xml
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2Fquality-policy%2F
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-32
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-32
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2Fquality-policy%2F&format=xml
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-33
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-33
 Content Type: text/xml
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2Fsolid-yoke-dc-motors%2F
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-30
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-30
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2Fsolid-yoke-dc-motors%2F&format=xml
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-31
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-31
 Content Type: text/xml
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2Fwarranty%2F
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-34
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-34
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.racekon.com%2Fwarranty%2F&format=xml
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\oembed\1.0\embed-35
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\oembed\1.0\embed-35
 Content Type: text/xml
 
 Uri: https://www.racekon.com/wp-json/wp/v2/pages/1032
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\wp\v2\pages\1032
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\wp\v2\pages\1032
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/wp/v2/pages/1068
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\wp\v2\pages\1068
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\wp\v2\pages\1068
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/wp/v2/pages/1079
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\wp\v2\pages\1079
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\wp\v2\pages\1079
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/wp/v2/pages/1085
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\wp\v2\pages\1085
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\wp\v2\pages\1085
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/wp/v2/pages/1090
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\wp\v2\pages\1090
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\wp\v2\pages\1090
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/wp/v2/pages/11
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\wp\v2\pages\11
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\wp\v2\pages\11
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/wp/v2/pages/1184
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\wp\v2\pages\1184
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\wp\v2\pages\1184
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/wp/v2/pages/14
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\wp\v2\pages\14
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\wp\v2\pages\14
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/wp/v2/pages/18
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\wp\v2\pages\18
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\wp\v2\pages\18
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/wp/v2/pages/2269
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\wp\v2\pages\2269
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\wp\v2\pages\2269
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/wp/v2/pages/2274
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\wp\v2\pages\2274
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\wp\v2\pages\2274
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/wp/v2/pages/800
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\wp\v2\pages\800
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\wp\v2\pages\800
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/wp/v2/pages/816
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\wp\v2\pages\816
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\wp\v2\pages\816
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/wp/v2/pages/827
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\wp\v2\pages\827
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\wp\v2\pages\827
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/wp/v2/pages/828
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\wp\v2\pages\828
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\wp\v2\pages\828
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/wp/v2/pages/829
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\wp\v2\pages\829
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\wp\v2\pages\829
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/wp/v2/pages/830
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\wp\v2\pages\830
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\wp\v2\pages\830
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/wp/v2/pages/831
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\wp\v2\pages\831
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\wp\v2\pages\831
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/wp/v2/pages/832
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\wp\v2\pages\832
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\wp\v2\pages\832
 Content Type: application/json
 
 Uri: https://www.racekon.com/wp-json/wp/v2/pages/852
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\wp-json\wp\v2\pages\852
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\wp-json\wp\v2\pages\852
 Content Type: application/json
 
 Uri: https://www.racekon.com/xmlrpc.php?rsd
-File Name: C:\Users\HP\Desktop\My Projects\Downloaded\www.racekon.com\xmlrpc.php
+File Name: C:\Users\HP\Desktop\My Projects\Downloaded\UpdatedRacekon\www.racekon.com\xmlrpc.php
 Content Type: text/xml
 
