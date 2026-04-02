@@ -121,23 +121,34 @@
     ul.innerHTML = html;
 
     // --- Mobile hamburger toggle ---
-    // Clone the button to strip any stale listeners added by Astra's deferred JS
+    // Astra's JS (autoptimize bundle) controls mobile nav by:
+    //   1. Adding class "toggle-on" to ul.main-header-menu  AND  setting style.display="block" on it
+    //   2. Adding class "toggled" to the toggle *button*
+    //   3. Adding class "ast-main-header-nav-open" to document.body
+    // We clone-replace the button first to strip any stale listeners from Astra's deferred JS.
     var toggleBtn = document.querySelector('button.menu-toggle[aria-controls="primary-menu"]');
     if (toggleBtn) {
       var newBtn = toggleBtn.cloneNode(true);
       toggleBtn.parentNode.replaceChild(newBtn, toggleBtn);
 
       newBtn.addEventListener('click', function () {
-        var isOpen = newBtn.getAttribute('aria-expanded') === 'true';
-        newBtn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+        var isOpen = ul.classList.contains('toggle-on');
 
-        // Astra CSS uses .toggled on #masthead and #site-navigation to show the menu
-        var masthead = document.getElementById('masthead');
-        var nav = document.getElementById('site-navigation');
-        [masthead, nav].forEach(function (el) {
-          if (!el) return;
-          el.classList.toggle('toggled', !isOpen);
-        });
+        if (isOpen) {
+          // Close
+          ul.classList.remove('toggle-on');
+          ul.style.display = '';
+          newBtn.classList.remove('toggled');
+          newBtn.setAttribute('aria-expanded', 'false');
+          document.body.classList.remove('ast-main-header-nav-open');
+        } else {
+          // Open
+          ul.classList.add('toggle-on');
+          ul.style.display = 'block';
+          newBtn.classList.add('toggled');
+          newBtn.setAttribute('aria-expanded', 'true');
+          document.body.classList.add('ast-main-header-nav-open');
+        }
       });
     }
 
