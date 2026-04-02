@@ -641,32 +641,48 @@
       serialInp.addEventListener('input', () => clearError(serialInp, serialErr));
       invoiceInp.addEventListener('input', () => clearError(invoiceInp, invoiceErr));
 
-      /* ── Mock warranty database (replace with real API in production) ── */
-      function simulateApiCall(serialNumber, invoiceNumber) {
-        return new Promise((resolve, reject) => {
-          // Simulate a realistic network delay
-          setTimeout(() => {
+      /* ── Warranty API – GET https://aksystem.in:8443/contact/warranty ──
+         Query params:  serialNumber, invoiceNumber
+         Success (HTTP 200, found:true)  → resolves with warranty data object
+         Not found     (HTTP 200/404, found:false or 404) → rejects with message
+         Network/CORS error              → rejects with generic message
+      ── */
+      const WARRANTY_API = 'https://aksystem.in:8443/contact/warranty';
 
-            // ── Strict mock check ──
-            // Only Serial Number "200" AND Invoice Number "200" is valid.
-            if (serialNumber.trim() === '200' && invoiceNumber.trim() === '200') {
-              resolve({
-                serialNumber:       'RK-2023-SN-000200',
-                invoiceNumber:      'INV-2023-000200',
-                productName:        'AC Synchronous Motor (28 KG)',
-                companyName:        'RACEKON INDUSTRIES PVT. LTD.',
-                purchaseDate:       '15-03-2023',
-                warrantyExpiryDate: '15-03-2025',
-                dealer:             'Racekon Authorized Dealer, Delhi'
-              });
-            } else {
-              reject({
-                message: 'No warranty record found for the provided Serial Number and Invoice Number. Please double-check your details and try again.'
-              });
-            }
+      async function simulateApiCall(serialNumber, invoiceNumber) {
+        const url = new URL(WARRANTY_API);
+        url.searchParams.set('serialNumber',  serialNumber.trim());
+        url.searchParams.set('invoiceNumber', invoiceNumber.trim());
 
-          }, 1200); // Simulated 1.2 s network delay
-        });
+        let response;
+        try {
+          response = await fetch(url.toString(), {
+            method:  'GET',
+            headers: { 'Accept': 'application/json' }
+          });
+        } catch (networkErr) {
+          throw { message: 'Unable to reach the warranty server. Please check your connection and try again.' };
+        }
+
+        let data;
+        try {
+          data = await response.json();
+        } catch {
+          throw { message: 'The server returned an unexpected response. Please try again later.' };
+        }
+
+        // HTTP 404 or API-level "not found" flag
+        if (response.status === 404 || data.found === false) {
+          throw { message: data.message || 'No warranty record found for the provided Serial Number and Invoice Number. Please double-check your details and try again.' };
+        }
+
+        // Any other non-OK status
+        if (!response.ok) {
+          throw { message: data.message || `Server error (${response.status}). Please try again later.` };
+        }
+
+        // Success – return the warranty data object
+        return data;
       }
 
       /* ── Render success card ── */
