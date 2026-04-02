@@ -114,24 +114,56 @@
   ───────────────────────────────────────────────────────── */
   function injectMenu() {
     var ul = document.getElementById('primary-menu');
-    if (!ul) return; // Nothing to do if placeholder is absent
+    if (!ul) return;
 
     var html = '';
     menu.forEach(function (item) { html += buildItem(item); });
     ul.innerHTML = html;
 
-    // Astra's deferred JS bundle handles the hamburger toggle and sub-menu
-    // expansion automatically. We must NOT attach our own handlers here —
-    // doing so creates a double-handler conflict (both our code and Astra's
-    // code toggle the same classes, cancelling each other out).
+    // NOTE: We intentionally do NOT touch the .menu-toggle hamburger button.
+    // Astra's deferred JS handles it. We only filled the ul with li items;
+    // Astra will now find those items when it runs and wire up sub-menus.
+    //
+    // Fallback: If Astra's JS did not create .ast-menu-toggle buttons inside
+    // li.menu-item-has-children (e.g. because of a timing edge-case), we add
+    // our own minimal toggle after DOMContentLoaded (which fires AFTER deferred
+    // scripts, so Astra has definitely had its chance by then).
+    document.addEventListener('DOMContentLoaded', function () {
+      ul.querySelectorAll('.menu-item-has-children').forEach(function (li) {
+        // If Astra already injected a toggle button, skip – it handles the click.
+        if (li.querySelector('.ast-menu-toggle')) return;
+
+        // Astra did NOT inject a toggle – insert our own fallback button.
+        var btn = document.createElement('button');
+        btn.className = 'ast-menu-toggle';
+        btn.setAttribute('aria-expanded', 'false');
+        btn.setAttribute('aria-label', 'Toggle sub-menu');
+
+        var anchor = li.querySelector('a');
+        // Insert immediately after the <a> tag (same position Astra would use)
+        if (anchor && anchor.parentNode === li) {
+          li.insertBefore(btn, anchor.nextSibling);
+        } else {
+          li.appendChild(btn);
+        }
+
+        btn.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          var isExpanded = li.classList.toggle('ast-submenu-expanded');
+          var sub = li.querySelector('.sub-menu');
+          if (sub) sub.style.display = isExpanded ? 'block' : '';
+          btn.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+        });
+      });
+    });
   }
 
-  // Run as soon as the DOM is ready (nav.js is loaded synchronously at end of
-  // body, so it always executes before Astra's deferred JS initialises the menu)
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', injectMenu);
-  } else {
-    injectMenu();
-  }
+  // Always run injectMenu immediately.
+  // nav.js is a *synchronous* script loaded at the end of <body>, so by the
+  // time it executes, #primary-menu is already in the DOM. Running immediately
+  // (rather than waiting for DOMContentLoaded) ensures the <li> items are
+  // present when Astra's *deferred* bundle runs and queries them.
+  injectMenu();
 
 })();
