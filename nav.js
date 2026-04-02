@@ -120,57 +120,14 @@
     menu.forEach(function (item) { html += buildItem(item); });
     ul.innerHTML = html;
 
-    // --- Mobile hamburger toggle ---
-    // Astra's JS (autoptimize bundle) controls mobile nav by:
-    //   1. Adding class "toggle-on" to ul.main-header-menu  AND  setting style.display="block" on it
-    //   2. Adding class "toggled" to the toggle *button*
-    //   3. Adding class "ast-main-header-nav-open" to document.body
-    // We clone-replace the button first to strip any stale listeners from Astra's deferred JS.
-    var toggleBtn = document.querySelector('button.menu-toggle[aria-controls="primary-menu"]');
-    if (toggleBtn) {
-      var newBtn = toggleBtn.cloneNode(true);
-      toggleBtn.parentNode.replaceChild(newBtn, toggleBtn);
-
-      newBtn.addEventListener('click', function () {
-        var isOpen = ul.classList.contains('toggle-on');
-
-        if (isOpen) {
-          // Close
-          ul.classList.remove('toggle-on');
-          ul.style.display = '';
-          newBtn.classList.remove('toggled');
-          newBtn.setAttribute('aria-expanded', 'false');
-          document.body.classList.remove('ast-main-header-nav-open');
-        } else {
-          // Open
-          ul.classList.add('toggle-on');
-          ul.style.display = 'block';
-          newBtn.classList.add('toggled');
-          newBtn.setAttribute('aria-expanded', 'true');
-          document.body.classList.add('ast-main-header-nav-open');
-        }
-      });
-    }
-
-    // --- Mobile sub-menu toggle for items with children (e.g. Products) ---
-    ul.querySelectorAll('.menu-item-has-children > a').forEach(function (parentLink) {
-      parentLink.addEventListener('click', function (e) {
-        // Only intercept when the hamburger is visible (i.e. mobile view)
-        var btn = document.querySelector('button.menu-toggle');
-        if (!btn || getComputedStyle(btn).display === 'none') return;
-
-        e.preventDefault();
-        var li = parentLink.parentElement;
-        var sub = li.querySelector('.sub-menu');
-        if (!sub) return;
-
-        var expanded = li.classList.toggle('ast-submenu-expanded');
-        sub.style.display = expanded ? 'block' : '';
-      });
-    });
+    // Astra's deferred JS bundle handles the hamburger toggle and sub-menu
+    // expansion automatically. We must NOT attach our own handlers here —
+    // doing so creates a double-handler conflict (both our code and Astra's
+    // code toggle the same classes, cancelling each other out).
   }
 
-  // Run as soon as the DOM is ready (the script is at end of body, not deferred)
+  // Run as soon as the DOM is ready (nav.js is loaded synchronously at end of
+  // body, so it always executes before Astra's deferred JS initialises the menu)
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', injectMenu);
   } else {
