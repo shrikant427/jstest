@@ -436,17 +436,17 @@
 
     .btn-danger:hover { background: var(--danger); color: #fff; }
 
-    /* ── Search Bar for Manage Mode ── */
-    #search-box-container {
+    /* ── List Manage Mode ── */
+    #list-container {
       display: none;
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 20px;
+      padding: 24px;
       margin-bottom: 24px;
     }
-    #search-box-container.visible { display: block; }
-
+    #list-container.visible { display: block; }
+    
     .search-wrapper { display: flex; gap: 10px; }
     .search-wrapper input {
       flex: 1;
@@ -458,16 +458,41 @@
       font-size: 14px;
     }
     .search-wrapper input:focus { outline: none; border-color: var(--blue); }
-    .btn-search {
-      padding: 0 24px;
-      background: var(--blue);
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      font-weight: 600;
-      cursor: pointer;
+    
+    .warranty-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin-top: 20px;
     }
-    .btn-search:hover { background: var(--blue-h); }
+    .warranty-table th, .warranty-table td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .warranty-table th {
+      background: var(--surface2);
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-size: 11px;
+    }
+    .warranty-table tr:hover { background: rgba(0,0,0,0.02); }
+    .dark-theme .warranty-table tr:hover { background: rgba(255,255,255,0.02); }
+    
+    .action-links button {
+      background: transparent;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      padding: 4px;
+      opacity: 0.7;
+      transition: opacity 0.2s;
+    }
+    .action-links button:hover { opacity: 1; transform: scale(1.1); }
+    .action-links .edit-btn:hover { color: var(--blue); }
+    .action-links .del-btn:hover { color: var(--danger); }
 
     /* ── Toast notifications ── */
     #toast-container {
@@ -663,12 +688,28 @@
         <span id="api-status-text">Checking API connectivity…</span>
       </div>
 
-      <!-- Search box (Manage Mode) -->
-      <div id="search-box-container">
-        <div style="font-size: 13px; font-weight: 600; margin-bottom: 8px;">Find Record by Serial Number:</div>
+      <!-- List Records View (Manage Mode) -->
+      <div id="list-container">
         <div class="search-wrapper">
-          <input type="text" id="search-sn" placeholder="e.g. RK-2024-SN-00123" autocomplete="off">
-          <button type="button" id="btn-search-sn" class="btn-search">Search</button>
+          <input type="text" id="filter-records" placeholder="Filter by Serial Number, Customer or Product..." autocomplete="off">
+          <button type="button" id="btn-refresh-list" class="btn-secondary">↻ Refresh</button>
+        </div>
+        <div style="overflow-x: auto;">
+          <table class="warranty-table">
+            <thead>
+              <tr>
+                <th>Serial Number</th>
+                <th>Customer</th>
+                <th>Product</th>
+                <th>Purchased</th>
+                <th>Expires</th>
+                <th style="text-align:center;">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="warranty-tbody">
+              <tr><td colspan="6" style="text-align:center; padding: 30px; color: var(--muted);">Loading records...</td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
 
@@ -775,6 +816,7 @@
             <span>🗑️</span> Delete
           </button>
           <button type="button" class="btn-secondary" id="reset-btn">Clear Form</button>
+          <button type="button" class="btn-secondary" id="cancel-edit-btn" style="display: none;">Cancel</button>
         </div>
 
       </form><!-- /#warranty-admin-form -->
@@ -841,15 +883,18 @@
   const navManage     = document.getElementById('nav-manage');
   const pageTitle     = document.getElementById('page-title');
   const pageDesc      = document.getElementById('page-desc');
-  const searchBoxCont = document.getElementById('search-box-container');
-  const searchSn      = document.getElementById('search-sn');
-  const btnSearchSn   = document.getElementById('btn-search-sn');
+  const listContainer = document.getElementById('list-container');
+  const filterRecords = document.getElementById('filter-records');
+  const btnRefreshList= document.getElementById('btn-refresh-list');
+  const warrantyTbody = document.getElementById('warranty-tbody');
   const formContainer = document.getElementById('form-container');
   const deleteBtn     = document.getElementById('delete-btn');
+  const cancelEditBtn = document.getElementById('cancel-edit-btn');
   const themeToggle   = document.getElementById('theme-toggle');
 
-  let currentMode = 'ADD'; // 'ADD' or 'MANAGE'
+  let currentMode = 'ADD'; // 'ADD', 'MANAGE', 'EDIT'
   let loadedSerialNumber = null;
+  let allRecords = []; // Store fetched records
 
   // Form fields
   const fields = {
@@ -969,28 +1014,38 @@
     currentMode = mode;
     adminForm.reset();
     resetErrors();
-    loadedSerialNumber = null;
 
     navAdd.classList.remove('active');
     navManage.classList.remove('active');
-    fields.serialNumber.disabled = false; // Add mode allows typing ID
+    fields.serialNumber.disabled = false;
+    cancelEditBtn.style.display = 'none';
 
     if (mode === 'ADD') {
       navAdd.classList.add('active');
       pageTitle.innerHTML = '➕ Add Warranty Record';
       pageDesc.textContent = 'Submit a new warranty registration into the backend system. All starred fields are required.';
-      searchBoxCont.classList.remove('visible');
+      listContainer.style.display = 'none';
       formContainer.style.display = 'block';
       deleteBtn.style.display = 'none';
       submitBtn.innerHTML = '<span>✅</span> Submit Warranty Record';
       fields.companyName.value = 'RACEKON INDUSTRIES PVT. LTD.';
-    } else {
+      loadedSerialNumber = null;
+    } else if (mode === 'MANAGE') {
       navManage.classList.add('active');
-      pageTitle.innerHTML = '✏️ Manage Warranty Records';
-      pageDesc.textContent = 'Search for an existing warranty by serial number to update or delete it.';
-      searchBoxCont.classList.add('visible');
-      formContainer.style.display = 'none'; // hidden until loaded
+      pageTitle.innerHTML = '🗂️ Manage Warranty Records';
+      pageDesc.textContent = 'Search, edit, or delete existing warranty records in the system.';
+      listContainer.style.display = 'block';
+      formContainer.style.display = 'none';
+      loadedSerialNumber = null;
+      loadAllRecords(); // fetch and display
+    } else if (mode === 'EDIT') {
+      navManage.classList.add('active'); // Still visually in manage section
+      pageTitle.innerHTML = '✏️ Edit Warranty Record';
+      pageDesc.textContent = 'Update details for the selected warranty record.';
+      listContainer.style.display = 'none';
+      formContainer.style.display = 'block';
       deleteBtn.style.display = 'inline-block';
+      cancelEditBtn.style.display = 'inline-block';
       submitBtn.innerHTML = '<span>🔄</span> Update Record';
     }
   }
@@ -1003,6 +1058,10 @@
     e.preventDefault(); setMode('MANAGE');
   });
 
+  cancelEditBtn.addEventListener('click', function() {
+    setMode('MANAGE');
+  });
+
   function resetErrors() {
     requiredFields.forEach(function (key) {
       fields[key].classList.remove('error');
@@ -1010,64 +1069,108 @@
     });
   }
 
-  /* ── MANAGE SEARCH (LOAD DATA) ──────────────────────── */
+  /* ── LOAD ALL RECORDS (LIST VIEW) ────────────────────── */
 
   function formatHtmlDate(apiDate) {
-    // apiDate "DD-MM-YYYY" -> HTML "YYYY-MM-DD"
     if (!apiDate) return '';
     const p = apiDate.split('-');
     if (p.length !== 3) return apiDate;
     return p[2] + '-' + p[1] + '-' + p[0];
   }
 
-  btnSearchSn.addEventListener('click', async function() {
-    const sn = searchSn.value.trim().toUpperCase();
-    if (!sn) {
-      showToast('Please enter a Serial Number', 'warn');
+  async function loadAllRecords() {
+    warrantyTbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding: 40px;"><span class="spinner" style="border-top-color:#1f6feb; border-width:3px; width:24px; height:24px;"></span></td></tr>';
+    try {
+      const res = await fetch(`${API_BASE}/admin/warranty`, {
+        headers: {
+          'Accept': 'application/json',
+          'Authorization': 'Bearer ' + getAdminToken()
+        }
+      });
+      if (!res.ok) throw new Error('API returned ' + res.status);
+      
+      allRecords = await res.json();
+      renderRecordsTable(allRecords);
+    } catch (err) {
+      console.error(err);
+      warrantyTbody.innerHTML = `<tr><td colspan="6" style="text-align:center; color: var(--danger); padding: 20px;">Failed to load records. ${err.message}</td></tr>`;
+      showToast('Failed to list records', 'error');
+    }
+  }
+
+  btnRefreshList.addEventListener('click', loadAllRecords);
+
+  filterRecords.addEventListener('input', function() {
+    const q = filterRecords.value.toLowerCase().trim();
+    if (!q) {
+      renderRecordsTable(allRecords);
+      return;
+    }
+    const filtered = allRecords.filter(r => 
+      (r.serialNumber || '').toLowerCase().includes(q) ||
+      (r.companyName || '').toLowerCase().includes(q) ||
+      (r.productName || '').toLowerCase().includes(q)
+    );
+    renderRecordsTable(filtered);
+  });
+
+  function renderRecordsTable(records) {
+    if (!Array.isArray(records) || records.length === 0) {
+      warrantyTbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding: 30px; color: var(--muted);">No records found.</td></tr>';
       return;
     }
 
-    const prevBtnTxt = btnSearchSn.textContent;
-    btnSearchSn.textContent = 'Loading...';
-    btnSearchSn.disabled = true;
+    warrantyTbody.innerHTML = '';
+    records.forEach(rec => {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td style="font-weight:600; color:var(--blue);">${escapeHtml(rec.serialNumber)}</td>
+        <td>${escapeHtml(rec.companyName || '')}</td>
+        <td>${escapeHtml(rec.productName || '')}</td>
+        <td>${escapeHtml(rec.purchaseDate || '')}</td>
+        <td>${escapeHtml(rec.warrantyExpiryDate || '')}</td>
+        <td style="text-align:center;" class="action-links">
+          <button type="button" class="edit-btn" title="Edit" data-sn="${escapeHtml(rec.serialNumber)}">✏️</button>
+          <button type="button" class="del-btn" title="Delete" data-sn="${escapeHtml(rec.serialNumber)}">🗑️</button>
+        </td>
+      `;
+      warrantyTbody.appendChild(tr);
+    });
 
-    try {
-      // Lookup uses public endpoint
-      const res = await fetch(`${API_BASE}/contact/warranty?serialNumber=${encodeURIComponent(sn)}`, {
-        headers: { 'Accept': 'application/json' }
+    const editBtns = warrantyTbody.querySelectorAll('.edit-btn');
+    const delBtns = warrantyTbody.querySelectorAll('.del-btn');
+
+    editBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const sn = this.getAttribute('data-sn');
+        const rec = allRecords.find(r => r.serialNumber === sn);
+        if (rec) loadRecordIntoForm(rec);
       });
+    });
 
-      if (res.ok) {
-        const data = await res.json();
-        loadedSerialNumber = data.serialNumber;
-        
-        fields.serialNumber.value       = data.serialNumber || '';
-        fields.serialNumber.disabled    = true; // cannot edit PK
-        fields.invoiceNumber.value      = data.invoiceNumber || '';
-        fields.productName.value        = data.productName || '';
-        fields.companyName.value        = data.companyName || 'RACEKON INDUSTRIES PVT. LTD.';
-        fields.purchaseDate.value       = formatHtmlDate(data.purchaseDate) || '';
-        fields.warrantyExpiryDate.value = formatHtmlDate(data.warrantyExpiryDate) || '';
-        fields.dealer.value             = data.dealer || '';
-        
-        resetErrors();
-        formContainer.style.display = 'block';
-        showToast('Record loaded for editing', 'success');
-      } else if (res.status === 404) {
-        showToast('Record not found', 'error');
-        formContainer.style.display = 'none';
-      } else {
-        throw new Error('API returned ' + res.status);
-      }
-    } catch (err) {
-      console.error(err);
-      showToast('Failed to load record from server.', 'error');
-      formContainer.style.display = 'none';
-    } finally {
-      btnSearchSn.textContent = prevBtnTxt;
-      btnSearchSn.disabled = false;
-    }
-  });
+    delBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const sn = this.getAttribute('data-sn');
+        deleteSingleRecord(sn);
+      });
+    });
+  }
+
+  function loadRecordIntoForm(data) {
+    setMode('EDIT');
+    loadedSerialNumber = data.serialNumber;
+    
+    fields.serialNumber.value       = data.serialNumber || '';
+    fields.serialNumber.disabled    = true; // cannot edit PK
+    fields.invoiceNumber.value      = data.invoiceNumber || '';
+    fields.productName.value        = data.productName || '';
+    fields.companyName.value        = data.companyName || 'RACEKON INDUSTRIES PVT. LTD.';
+    fields.purchaseDate.value       = formatHtmlDate(data.purchaseDate) || '';
+    fields.warrantyExpiryDate.value = formatHtmlDate(data.warrantyExpiryDate) || '';
+    fields.dealer.value             = data.dealer || '';
+    
+    showToast('Record loaded for editing', 'success');
+  }
 
   /* ── API STATUS CHECK ───────────────────────────────── */
 
@@ -1188,6 +1291,8 @@
         if (currentMode === 'ADD') {
           adminForm.reset();
           fields.companyName.value = 'RACEKON INDUSTRIES PVT. LTD.';
+        } else {
+          setMode('MANAGE'); // Go back to list on success
         }
       } else {
         throw new Error(respData.message || 'Server error ' + resp.status);
@@ -1205,15 +1310,23 @@
 
   /* ── DELETE ──────────────────────────────────────────── */
 
-  deleteBtn.addEventListener('click', async function() {
-    if (!loadedSerialNumber) return;
-    if (!confirm(`Are you sure you want to permanently delete record ${loadedSerialNumber}?`)) return;
+  deleteBtn.addEventListener('click', function() {
+    deleteSingleRecord(loadedSerialNumber);
+  });
 
-    deleteBtn.disabled = true;
-    deleteBtn.innerHTML = '<span class="spinner"></span>';
+  async function deleteSingleRecord(sn) {
+    if (!sn) return;
+    if (!confirm(`Are you sure you want to permanently delete record ${sn}?`)) return;
+
+    // Optional: show loading state on buttons if done from the edit form
+    const isEditForm = currentMode === 'EDIT';
+    if (isEditForm) {
+      deleteBtn.disabled = true;
+      deleteBtn.innerHTML = '<span class="spinner"></span>';
+    }
 
     try {
-      const ep = `${API_BASE}/admin/warranty/${encodeURIComponent(loadedSerialNumber)}`;
+      const ep = `${API_BASE}/admin/warranty/${encodeURIComponent(sn)}`;
       const resp = await fetch(ep, {
         method: 'DELETE',
         headers: {
@@ -1223,8 +1336,11 @@
 
       if (resp.ok) {
         showToast('✅ Record deleted.', 'success');
-        formContainer.style.display = 'none';
-        searchSn.value = '';
+        if (isEditForm) {
+          setMode('MANAGE'); // Go back to list if deleted from within edit form
+        } else {
+          loadAllRecords(); // Refresh list if deleted directly from list
+        }
       } else {
         throw new Error('Server returned ' + resp.status);
       }
@@ -1232,10 +1348,12 @@
       const msg = (err instanceof TypeError) ? 'Network error' : err.message;
       showToast('❌ Failed to delete: ' + msg, 'error');
     } finally {
-      deleteBtn.disabled = false;
-      deleteBtn.innerHTML = '<span>🗑️</span> Delete';
+      if (isEditForm) {
+        deleteBtn.disabled = false;
+        deleteBtn.innerHTML = '<span>🗑️</span> Delete';
+      }
     }
-  });
+  }
 
   /* ── RESET ───────────────────────────────────────────── */
 
