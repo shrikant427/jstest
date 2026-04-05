@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Warranty Admin – RACEKON</title>
+  <!-- No-index: prevent search engines from indexing this page -->
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* =============================================
+       RACEKON WARRANTY ADMIN – HIDDEN ADMIN PAGE
+       Not linked from any public page.
+       Password: set via ADMIN_PASSWORD constant below.
+    ============================================= */
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:         #0d1117;
+      --surface:    #161b22;
+      --surface2:   #21262d;
+      --border:     #30363d;
+      --accent:     #238636;
+      --accent-h:   #2ea043;
+      --danger:     #da3633;
+      --warn:       #d29922;
+      --text:       #e6edf3;
+      --muted:      #8b949e;
+      --blue:       #1f6feb;
+      --blue-h:     #388bfd;
+      --radius:     10px;
+      --transition: 0.2s ease;
+    }
+
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--text);
+      font-size: 15px;
+    }
+
+    /* ── Login overlay ── */
+    #login-overlay {
+      position: fixed;
+      inset: 0;
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+
+    .login-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 48px 44px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+
+    .login-logo {
+      display: block;
+      width: 140px;
+      margin: 0 auto 24px;
+    }
+
+    .login-card h1 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+
+    .login-card .login-subtitle {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    .admin-badge {
+      display: inline-block;
+      background: rgba(218,54,51,0.18);
+      color: #ff7b72;
+      border: 1px solid rgba(218,54,51,0.4);
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 12px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .login-field {
+      position: relative;
+      margin-bottom: 16px;
+    }
+
+    .login-field input {
+      width: 100%;
+      padding: 12px 16px 12px 42px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text);
+      font-size: 15px;
+      font-family: inherit;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+
+    .login-field input:focus {
+      outline: none;
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(31,111,235,0.2);
+    }
+
+    .login-field .field-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 16px;
+      pointer-events: none;
+    }
+
+    #login-error {
+      color: #ff7b72;
+      font-size: 13px;
+      margin-bottom: 14px;
+      display: none;
+    }
+
+    #login-error.visible { display: block; }
+
+    .btn-primary {
+      display: block;
+      width: 100%;
+      padding: 13px;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius);
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      transition: background var(--transition), transform 0.1s;
+    }
+
+    .btn-primary:hover { background: var(--accent-h); }
+    .btn-primary:active { transform: scale(0.98); }
+    .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+    /* ── Main Admin Shell ── */
+    #admin-shell { display: none; min-height: 100vh; }
+    #admin-shell.visible { display: block; }
+
+    /* Sidebar + content layout */
+    .admin-layout {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* ── Sidebar ── */
+    .sidebar {
+      width: 240px;
+      flex-shrink: 0;
+      background: var(--surface);
+      border-right: 1px solid var(--border);
+      padding: 24px 0;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sidebar-logo {
+      display: block;
+      width: 120px;
+      margin: 0 auto 24px;
+      padding: 0 20px;
+    }
+
+    .sidebar-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--muted);
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 0 20px;
+      margin-bottom: 8px;
+    }
+
+    .sidebar-nav a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 20px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      border-left: 3px solid transparent;
+      transition: background var(--transition), color var(--transition), border-color var(--transition);
+    }
+
+    .sidebar-nav a:hover,
+    .sidebar-nav a.active {
+      background: rgba(56,139,253,0.1);
+      color: var(--blue-h);
+      border-left-color: var(--blue-h);
+    }
+
+    .sidebar-nav a .nav-icon { font-size: 16px; }
+
+    .sidebar-bottom {
+      margin-top: auto;
+      padding: 16px 20px;
+      border-top: 1px solid var(--border);
+    }
+
+    .sidebar-bottom button {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: none;
+      border: none;
+      color: var(--muted);
+      font-size: 14px;
+      cursor: pointer;
+      font-family: inherit;
+      padding: 8px 0;
+      width: 100%;
+      transition: color var(--transition);
+    }
+
+    .sidebar-bottom button:hover { color: #ff7b72; }
+
+    /* ── Main content ── */
+    .admin-content {
+      flex: 1;
+      padding: 40px;
+      max-width: 900px;
+    }
+
+    .page-header {
+      margin-bottom: 32px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .page-header h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .page-header p {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    /* ── Form card ── */
+    .form-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+
+    .form-card-header {
+      padding: 16px 24px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .form-card-header .card-icon { font-size: 18px; }
+
+    .form-card-header h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .form-card-body { padding: 24px; }
+
+    /* Grid forms */
+    .form-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .form-grid-1 {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    @media (max-width: 700px) {
+      .form-grid-2 { grid-template-columns: 1fr; }
+      .admin-content { padding: 20px; }
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .form-group label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: 0.2px;
+    }
+
+    .form-group label .required {
+      color: #ff7b72;
+      margin-left: 2px;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 11px 14px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-size: 14px;
+      font-family: inherit;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(31,111,235,0.2);
+    }
+
+    .form-group input.error { border-color: var(--danger); }
+    .form-group .hint { font-size: 12px; color: var(--muted); margin-top: 2px; }
+    .form-group .field-error { font-size: 12px; color: #ff7b72; display: none; }
+    .form-group .field-error.visible { display: block; }
+
+    .form-divider {
+      height: 1px;
+      background: var(--border);
+      margin: 24px 0;
+    }
+
+    .form-actions {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-submit {
+      padding: 12px 28px;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: background var(--transition), transform 0.1s;
+    }
+
+    .btn-submit:hover { background: var(--accent-h); }
+    .btn-submit:active { transform: scale(0.98); }
+    .btn-submit:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+    .btn-secondary {
+      padding: 12px 28px;
+      background: transparent;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      transition: border-color var(--transition), color var(--transition);
+    }
+
+    .btn-secondary:hover { border-color: var(--text); color: var(--text); }
+
+    /* ── Toast notifications ── */
+    #toast-container {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 10000;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      pointer-events: none;
+    }
+
+    .toast {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+      color: var(--text);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      animation: toastIn 0.3s ease;
+      pointer-events: auto;
+      min-width: 300px;
+      max-width: 420px;
+    }
+
+    .toast.success { border-left: 4px solid var(--accent); }
+    .toast.error   { border-left: 4px solid var(--danger); }
+    .toast.warn    { border-left: 4px solid var(--warn); }
+    .toast .toast-icon { font-size: 18px; flex-shrink: 0; }
+    .toast .toast-msg  { flex: 1; }
+
+    @keyframes toastIn {
+      from { opacity: 0; transform: translateX(30px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+
+    /* ── Spinner ── */
+    .spinner {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      border: 2px solid rgba(255,255,255,0.3);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      vertical-align: middle;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── API Status indicator ── */
+    .api-status {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--warn);
+      animation: pulse 2s infinite;
+    }
+
+    .status-dot.online  { background: var(--accent-h); animation: none; }
+    .status-dot.offline { background: var(--danger);  animation: none; }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.4; }
+    }
+
+    /* ── Warning banner ── */
+    .warn-banner {
+      background: rgba(210,153,34,0.12);
+      border: 1px solid rgba(210,153,34,0.35);
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 13px;
+      color: #e3b341;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .warn-banner .wi { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+
+    /* ── Screen readers ── */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ======================================================
+     LOGIN OVERLAY — shown until password is verified
+====================================================== -->
+<div id="login-overlay" role="dialog" aria-modal="true" aria-labelledby="login-heading">
+  <div class="login-card">
+    <img class="login-logo"
+         src="../wp-content/uploads/2021/01/cropped-250.png"
+         alt="RACEKON"
+         onerror="this.style.display='none'">
+    <div class="admin-badge">🔒 Restricted Access</div>
+    <h1 id="login-heading">Warranty Admin</h1>
+    <p class="login-subtitle">Enter the admin password to continue.</p>
+
+    <form id="login-form" novalidate>
+      <div class="login-field">
+        <span class="field-icon">🔑</span>
+        <input type="password" id="admin-password" placeholder="Admin password"
+               autocomplete="current-password" aria-label="Admin Password" required>
+      </div>
+      <p id="login-error" role="alert">Incorrect password. Please try again.</p>
+      <button type="submit" class="btn-primary" id="login-btn">Sign In</button>
+    </form>
+  </div>
+</div>
+
+<!-- ======================================================
+     MAIN ADMIN SHELL — revealed after login
+====================================================== -->
+<div id="admin-shell" aria-label="Admin Panel">
+
+  <div class="admin-layout">
+
+    <!-- ── Sidebar ── -->
+    <aside class="sidebar" role="navigation" aria-label="Admin Navigation">
+      <img class="sidebar-logo"
+           src="../wp-content/uploads/2021/01/cropped-250.png"
+           alt="RACEKON"
+           onerror="this.style.display='none'">
+
+      <p class="sidebar-label">Warranty</p>
+      <nav class="sidebar-nav">
+        <a href="#" class="active" id="nav-add">
+          <span class="nav-icon">➕</span> Add Record
+        </a>
+        <a href="#" id="nav-preview">
+          <span class="nav-icon">🔍</span> Preview Lookup
+        </a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <button id="signout-btn" type="button" title="Sign out">
+          <span>🔓</span> Sign Out
+        </button>
+      </div>
+    </aside>
+
+    <!-- ── Content ── -->
+    <main class="admin-content" role="main">
+
+      <!-- Page header -->
+      <div class="page-header">
+        <h2>➕ Add Warranty Record</h2>
+        <p>Submit a new warranty registration into the backend system. All starred fields are required.</p>
+      </div>
+
+      <!-- Warning banner -->
+      <div class="warn-banner">
+        <span class="wi">⚠️</span>
+        <span><strong>Admin action:</strong> Data submitted here is written directly to the production database. Double-check all fields before submitting.</span>
+      </div>
+
+      <!-- API status indicator -->
+      <div class="api-status">
+        <span class="status-dot" id="api-status-dot"></span>
+        <span id="api-status-text">Checking API connectivity…</span>
+      </div>
+
+      <!-- ── FORM CARD ── -->
+      <form id="warranty-admin-form" novalidate>
+
+        <!-- Section 1: Product Identity -->
+        <div class="form-card">
+          <div class="form-card-header">
+            <span class="card-icon">🏷️</span>
+            <h3>Product Identification</h3>
+          </div>
+          <div class="form-card-body">
+            <div class="form-grid-2">
+
+              <div class="form-group">
+                <label for="f-serial">Serial Number <span class="required">*</span></label>
+                <input type="text" id="f-serial" name="serialNumber"
+                       placeholder="e.g. RK-2024-SN-00123" autocomplete="off">
+                <span class="hint">Unique product serial from the label.</span>
+                <span class="field-error" id="err-serial">Serial Number is required.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="f-invoice">Invoice Number <span class="required">*</span></label>
+                <input type="text" id="f-invoice" name="invoiceNumber"
+                       placeholder="e.g. INV-2024-00456" autocomplete="off">
+                <span class="hint">Invoice number from the dealer.</span>
+                <span class="field-error" id="err-invoice">Invoice Number is required.</span>
+              </div>
+
+              <div class="form-group" style="grid-column: 1 / -1;">
+                <label for="f-product">Product Name <span class="required">*</span></label>
+                <input type="text" id="f-product" name="productName"
+                       placeholder="e.g. AC Synchronous Motor (28 KG)" autocomplete="off">
+                <span class="hint">Full name of the RACEKON product.</span>
+                <span class="field-error" id="err-product">Product Name is required.</span>
+              </div>
+
+              <div class="form-group" style="grid-column: 1 / -1;">
+                <label for="f-company">Company Name <span class="required">*</span></label>
+                <input type="text" id="f-company" name="companyName"
+                       value="RACEKON INDUSTRIES PVT. LTD." autocomplete="off">
+                <span class="hint">Manufacturer name (pre-filled).</span>
+                <span class="field-error" id="err-company">Company Name is required.</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2: Dates -->
+        <div class="form-card">
+          <div class="form-card-header">
+            <span class="card-icon">📅</span>
+            <h3>Warranty Dates</h3>
+          </div>
+          <div class="form-card-body">
+            <div class="form-grid-2">
+
+              <div class="form-group">
+                <label for="f-purchase-date">Purchase Date <span class="required">*</span></label>
+                <input type="date" id="f-purchase-date" name="purchaseDate">
+                <span class="hint">Date of product purchase.</span>
+                <span class="field-error" id="err-purchase-date">Purchase Date is required.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="f-expiry-date">Warranty Expiry Date <span class="required">*</span></label>
+                <input type="date" id="f-expiry-date" name="warrantyExpiryDate">
+                <span class="hint">Date warranty coverage ends.</span>
+                <span class="field-error" id="err-expiry-date">Warranty Expiry Date is required.</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 3: Dealer (optional) -->
+        <div class="form-card">
+          <div class="form-card-header">
+            <span class="card-icon">🏪</span>
+            <h3>Dealer Information <span style="font-weight:400;color:var(--muted);font-size:13px;">(optional)</span></h3>
+          </div>
+          <div class="form-card-body">
+            <div class="form-grid-1">
+              <div class="form-group">
+                <label for="f-dealer">Authorized Dealer</label>
+                <input type="text" id="f-dealer" name="dealer"
+                       placeholder="e.g. Racekon Authorized Dealer, Delhi" autocomplete="off">
+                <span class="hint">Name and location of the selling dealer.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Submit actions -->
+        <div class="form-actions">
+          <button type="submit" class="btn-submit" id="submit-btn">
+            <span>✅</span> Submit Warranty Record
+          </button>
+          <button type="button" class="btn-secondary" id="reset-btn">Clear Form</button>
+        </div>
+
+      </form><!-- /#warranty-admin-form -->
+
+    </main><!-- /.admin-content -->
+  </div><!-- /.admin-layout -->
+</div><!-- /#admin-shell -->
+
+<!-- Toast container -->
+<div id="toast-container" aria-live="polite"></div>
+
+<!-- ======================================================
+     ADMIN JAVASCRIPT
+====================================================== -->
+<script>
+(function () {
+  'use strict';
+
+  /* ── CONFIGURATION ──────────────────────────────────── */
+
+  // Change this to your actual admin password.
+  // In production, replace with a server-side session check.
+  const ADMIN_PASSWORD = 'racekon@admin2024';
+
+  // Backend API endpoint
+  const API_BASE = 'https://aksystem.in:8443';
+  const WARRANTY_CREATE_API = API_BASE + '/admin/warranty';
+  const WARRANTY_PING_API   = API_BASE + '/contact/warranty?serialNumber=PING_TEST';
+
+  // Admin token – sent as Bearer token to authenticate admin API calls.
+  // Must match what the backend expects.
+  const ADMIN_TOKEN_KEY = 'rk_admin_token';
+  // For simplicity, we derive a token from the password hash.
+  // Backend should validate this against a stored secret.
+  function getAdminToken() {
+    return btoa('racekon-admin:' + ADMIN_PASSWORD);
+  }
+
+  /* ── SESSION ────────────────────────────────────────── */
+
+  function isLoggedIn() {
+    return sessionStorage.getItem(ADMIN_TOKEN_KEY) === getAdminToken();
+  }
+
+  function login(password) {
+    if (password === ADMIN_PASSWORD) {
+      sessionStorage.setItem(ADMIN_TOKEN_KEY, getAdminToken());
+      return true;
+    }
+    return false;
+  }
+
+  function logout() {
+    sessionStorage.removeItem(ADMIN_TOKEN_KEY);
+    showLoginOverlay();
+  }
+
+  /* ── UI REFERENCES ──────────────────────────────────── */
+
+  const loginOverlay  = document.getElementById('login-overlay');
+  const loginForm     = document.getElementById('login-form');
+  const loginBtn      = document.getElementById('login-btn');
+  const loginError    = document.getElementById('login-error');
+  const passwordInput = document.getElementById('admin-password');
+  const adminShell    = document.getElementById('admin-shell');
+  const signOutBtn    = document.getElementById('signout-btn');
+  const adminForm     = document.getElementById('warranty-admin-form');
+  const submitBtn     = document.getElementById('submit-btn');
+  const resetBtn      = document.getElementById('reset-btn');
+  const statusDot     = document.getElementById('api-status-dot');
+  const statusText    = document.getElementById('api-status-text');
+  const toastContainer= document.getElementById('toast-container');
+
+  // Form fields
+  const fields = {
+    serialNumber:       document.getElementById('f-serial'),
+    invoiceNumber:      document.getElementById('f-invoice'),
+    productName:        document.getElementById('f-product'),
+    companyName:        document.getElementById('f-company'),
+    purchaseDate:       document.getElementById('f-purchase-date'),
+    warrantyExpiryDate: document.getElementById('f-expiry-date'),
+    dealer:             document.getElementById('f-dealer'),
+  };
+
+  const fieldErrors = {
+    serialNumber:       document.getElementById('err-serial'),
+    invoiceNumber:      document.getElementById('err-invoice'),
+    productName:        document.getElementById('err-product'),
+    companyName:        document.getElementById('err-company'),
+    purchaseDate:       document.getElementById('err-purchase-date'),
+    warrantyExpiryDate: document.getElementById('err-expiry-date'),
+  };
+
+  /* ── SHOW / HIDE LOGIN ──────────────────────────────── */
+
+  function showLoginOverlay() {
+    loginOverlay.style.display = 'flex';
+    adminShell.classList.remove('visible');
+    passwordInput.value = '';
+    loginError.classList.remove('visible');
+  }
+
+  function showAdminShell() {
+    loginOverlay.style.display = 'none';
+    adminShell.classList.add('visible');
+    checkApiStatus();
+  }
+
+  /* ── LOGIN HANDLING ─────────────────────────────────── */
+
+  if (isLoggedIn()) {
+    showAdminShell();
+  } else {
+    showLoginOverlay();
+  }
+
+  loginForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const pw = passwordInput.value.trim();
+    loginBtn.disabled = true;
+    loginBtn.textContent = 'Verifying…';
+
+    setTimeout(function () {
+      if (login(pw)) {
+        loginError.classList.remove('visible');
+        showAdminShell();
+      } else {
+        loginError.classList.add('visible');
+        passwordInput.value = '';
+        passwordInput.focus();
+      }
+      loginBtn.disabled = false;
+      loginBtn.textContent = 'Sign In';
+    }, 400); // tiny delay to prevent brute-force timing attack feel
+  });
+
+  signOutBtn.addEventListener('click', function () {
+    if (confirm('Sign out of the admin panel?')) logout();
+  });
+
+  /* ── API STATUS CHECK ───────────────────────────────── */
+
+  async function checkApiStatus() {
+    statusDot.className = 'status-dot';
+    statusText.textContent = 'Checking API connectivity…';
+    try {
+      const resp = await fetch(WARRANTY_PING_API, {
+        method: 'GET',
+        headers: { 'Accept': 'application/json' },
+        signal: AbortSignal.timeout(5000)
+      });
+      if (resp.ok || resp.status === 404) {
+        statusDot.className = 'status-dot online';
+        statusText.textContent = 'API is reachable (' + API_BASE + ')';
+      } else {
+        throw new Error('HTTP ' + resp.status);
+      }
+    } catch (err) {
+      statusDot.className = 'status-dot offline';
+      statusText.textContent = 'API unreachable – working offline (' + API_BASE + ')';
+    }
+  }
+
+  /* ── VALIDATION ─────────────────────────────────────── */
+
+  const requiredFields = ['serialNumber', 'invoiceNumber', 'productName', 'companyName', 'purchaseDate', 'warrantyExpiryDate'];
+
+  function validateForm() {
+    let valid = true;
+    requiredFields.forEach(function (key) {
+      const fld = fields[key];
+      const err = fieldErrors[key];
+      if (!fld.value.trim()) {
+        fld.classList.add('error');
+        err.classList.add('visible');
+        valid = false;
+      } else {
+        fld.classList.remove('error');
+        err.classList.remove('visible');
+      }
+    });
+    return valid;
+  }
+
+  requiredFields.forEach(function (key) {
+    fields[key].addEventListener('input', function () {
+      if (fields[key].value.trim()) {
+        fields[key].classList.remove('error');
+        fieldErrors[key].classList.remove('visible');
+      }
+    });
+  });
+
+  /* ── DATE HELPER: HTML date input → DD-MM-YYYY ─────── */
+
+  function toApiDate(htmlDate) {
+    // htmlDate: "YYYY-MM-DD" → "DD-MM-YYYY"
+    if (!htmlDate) return '';
+    const parts = htmlDate.split('-');
+    if (parts.length !== 3) return htmlDate;
+    return parts[2] + '-' + parts[1] + '-' + parts[0];
+  }
+
+  /* ── SUBMIT ──────────────────────────────────────────── */
+
+  adminForm.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    if (!isLoggedIn()) { logout(); return; }
+    if (!validateForm()) {
+      showToast('Please fill in all required fields.', 'error');
+      return;
+    }
+
+    const payload = {
+      serialNumber:       fields.serialNumber.value.trim().toUpperCase(),
+      invoiceNumber:      fields.invoiceNumber.value.trim().toUpperCase(),
+      productName:        fields.productName.value.trim(),
+      companyName:        fields.companyName.value.trim(),
+      purchaseDate:       toApiDate(fields.purchaseDate.value),
+      warrantyExpiryDate: toApiDate(fields.warrantyExpiryDate.value),
+      dealer:             fields.dealer.value.trim() || undefined,
+    };
+
+    // Remove undefined keys
+    Object.keys(payload).forEach(function (k) {
+      if (payload[k] === undefined) delete payload[k];
+    });
+
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span class="spinner"></span> Submitting…';
+
+    try {
+      const resp = await fetch(WARRANTY_CREATE_API, {
+        method:  'POST',
+        headers: {
+          'Content-Type':  'application/json',
+          'Accept':        'application/json',
+          'Authorization': 'Bearer ' + getAdminToken(),
+        },
+        body: JSON.stringify(payload),
+      });
+
+      let respData;
+      try { respData = await resp.json(); } catch { respData = {}; }
+
+      if (resp.ok || resp.status === 201) {
+        showToast('✅ Warranty record created successfully!', 'success');
+        adminForm.reset();
+        // Re-set the pre-filled company name
+        fields.companyName.value = 'RACEKON INDUSTRIES PVT. LTD.';
+      } else {
+        throw new Error(respData.message || 'Server error ' + resp.status);
+      }
+
+    } catch (err) {
+      const isNetwork = err instanceof TypeError;
+      const msg = isNetwork
+        ? 'Network error – API is unreachable. Check your connection and API server.'
+        : (err.message || 'An unexpected error occurred.');
+      showToast('❌ ' + msg, 'error');
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = '<span>✅</span> Submit Warranty Record';
+    }
+  });
+
+  resetBtn.addEventListener('click', function () {
+    if (confirm('Clear all form fields?')) {
+      adminForm.reset();
+      fields.companyName.value = 'RACEKON INDUSTRIES PVT. LTD.';
+      requiredFields.forEach(function (key) {
+        fields[key].classList.remove('error');
+        fieldErrors[key].classList.remove('visible');
+      });
+    }
+  });
+
+  /* ── TOAST SYSTEM ───────────────────────────────────── */
+
+  function showToast(message, type) {
+    type = type || 'success';
+    const icons = { success: '✅', error: '❌', warn: '⚠️' };
+    const toast = document.createElement('div');
+    toast.className = 'toast ' + type;
+    toast.innerHTML =
+      '<span class="toast-icon">' + icons[type] + '</span>' +
+      '<span class="toast-msg">' + escapeHtml(message) + '</span>';
+    toastContainer.appendChild(toast);
+    setTimeout(function () {
+      toast.style.opacity = '0';
+      toast.style.transition = 'opacity 0.4s ease';
+      setTimeout(function () { toast.remove(); }, 400);
+    }, 4000);
+  }
+
+  /* ── XSS HELPER ─────────────────────────────────────── */
+
+  function escapeHtml(str) {
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+})();
+</script>
+
+</body>
+</html>

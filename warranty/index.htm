@@ -155,13 +155,7 @@
       flex-direction: column;
       gap: 20px;
     }
-    .form-fields-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
     @media (max-width: 680px) {
-      .form-fields-row { grid-template-columns: 1fr; }
       .warranty-search-box { padding: 32px 20px; }
     }
     .form-field-group {
@@ -472,7 +466,7 @@
                         <div class="warranty-hero-overlay">
                           <div class="warranty-hero-text">
                             <h1>Product Warranty</h1>
-                            <p>Verify your RACEKON product warranty with your Serial &amp; Invoice number</p>
+                            <p>Verify your RACEKON product warranty with just your Serial Number</p>
                           </div>
                         </div>
                       </section>
@@ -480,7 +474,7 @@
                       <!-- Ticker Banner – full-width, outside elementor container constraints -->
                       <section class="elementor-section elementor-top-section warranty-ticker" style="background:#1a1a2e;padding:0;">
                         <marquee behavior="scroll" direction="left" scrollamount="5" style="display:block;width:100%;padding:13px 0;">
-                          <h5 style="margin:0;display:inline;color:#ffffff;font-size:16px;letter-spacing:0.5px;">Enter your Serial Number &amp; Invoice Number to check your RACEKON product warranty status.</h5>
+                          <h5 style="margin:0;display:inline;color:#ffffff;font-size:16px;letter-spacing:0.5px;">Enter your Serial Number to check your RACEKON product warranty status. &nbsp;|&nbsp; Quick. Easy. Instant.</h5>
                         </marquee>
                       </section>
 
@@ -495,28 +489,17 @@
 
                                     <div class="warranty-search-box">
                                       <h2>Check Warranty Status</h2>
-                                      <p class="subtitle">Both Serial Number and Invoice Number are required to look up your warranty details.</p>
+                                      <p class="subtitle">Enter your product Serial Number to instantly verify your RACEKON warranty.</p>
 
                                       <!-- Form – hidden after successful lookup -->
                                       <form id="warranty-form" class="warranty-form" novalidate>
-                                        <!-- Two fields side-by-side on wider screens -->
-                                        <div class="form-fields-row">
-                                          <!-- Serial Number -->
-                                          <div class="form-field-group">
-                                            <label for="serial-number-input">Serial Number <span style="color:#e53935;">*</span></label>
-                                            <input type="text" id="serial-number-input" name="serialNumber"
-                                              placeholder="e.g. RK-2024-SN-00123" autocomplete="off">
-                                            <span class="field-hint">Found on the product label or packaging.</span>
-                                            <span class="form-error-msg" id="serial-error">Please enter a Serial Number.</span>
-                                          </div>
-                                          <!-- Invoice Number -->
-                                          <div class="form-field-group">
-                                            <label for="invoice-number-input">Invoice Number <span style="color:#e53935;">*</span></label>
-                                            <input type="text" id="invoice-number-input" name="invoiceNumber"
-                                              placeholder="e.g. INV-2024-00456" autocomplete="off">
-                                            <span class="field-hint">Found on the purchase invoice from your dealer.</span>
-                                            <span class="form-error-msg" id="invoice-error">Please enter an Invoice Number.</span>
-                                          </div>
+                                        <!-- Serial Number only -->
+                                        <div class="form-field-group">
+                                          <label for="serial-number-input">Serial Number <span style="color:#e53935;">*</span></label>
+                                          <input type="text" id="serial-number-input" name="serialNumber"
+                                            placeholder="e.g. RK-2024-SN-00123" autocomplete="off">
+                                          <span class="field-hint">Found on the product label or packaging.</span>
+                                          <span class="form-error-msg" id="serial-error">Please enter a valid Serial Number.</span>
                                         </div>
 
                                         <button type="submit" id="warranty-check-btn" class="warranty-submit-btn">
@@ -622,11 +605,9 @@
 
       const form       = document.getElementById('warranty-form');
       const serialInp  = document.getElementById('serial-number-input');
-      const invoiceInp = document.getElementById('invoice-number-input');
       const submitBtn  = document.getElementById('warranty-check-btn');
       const resultSec  = document.getElementById('warranty-result-section');
       const serialErr  = document.getElementById('serial-error');
-      const invoiceErr = document.getElementById('invoice-error');
 
       /* ── Validation helpers ── */
       function showError(input, errEl) {
@@ -639,20 +620,18 @@
       }
 
       serialInp.addEventListener('input', () => clearError(serialInp, serialErr));
-      invoiceInp.addEventListener('input', () => clearError(invoiceInp, invoiceErr));
 
       /* ── Warranty API – GET https://aksystem.in:8443/contact/warranty ──
-         Query params:  serialNumber, invoiceNumber
+         Query params:  serialNumber  (serial number only)
          Success (HTTP 200, found:true)  → resolves with warranty data object
          Not found     (HTTP 200/404, found:false or 404) → rejects with message
          Network/CORS error              → rejects with generic message
       ── */
       const WARRANTY_API = 'https://aksystem.in:8443/contact/warranty';
 
-      async function simulateApiCall(serialNumber, invoiceNumber) {
+      async function lookupWarranty(serialNumber) {
         const url = new URL(WARRANTY_API);
-        url.searchParams.set('serialNumber',  serialNumber.trim());
-        url.searchParams.set('invoiceNumber', invoiceNumber.trim());
+        url.searchParams.set('serialNumber', serialNumber.trim());
 
         let response;
         try {
@@ -673,7 +652,7 @@
 
         // HTTP 404 or API-level "not found" flag
         if (response.status === 404 || data.found === false) {
-          throw { message: data.message || 'No warranty record found for the provided Serial Number and Invoice Number. Please double-check your details and try again.' };
+          throw { message: data.message || 'No warranty record found for the provided Serial Number. Please double-check and try again.' };
         }
 
         // Any other non-OK status
@@ -707,10 +686,6 @@
               <div class="result-row">
                 <span class="result-label">Serial Number</span>
                 <span class="result-value">${escapeHtml(data.serialNumber)}</span>
-              </div>
-              <div class="result-row">
-                <span class="result-label">Invoice Number</span>
-                <span class="result-value">${escapeHtml(data.invoiceNumber)}</span>
               </div>
               <div class="result-row">
                 <span class="result-label">Product Name</span>
@@ -769,10 +744,8 @@
 
       /* ── Reset back to blank form ── */
       function resetForm() {
-        serialInp.value  = '';
-        invoiceInp.value = '';
+        serialInp.value = '';
         clearError(serialInp, serialErr);
-        clearError(invoiceInp, invoiceErr);
         resultSec.classList.remove('visible');
         resultSec.innerHTML = '';
         form.style.display = '';
@@ -792,13 +765,9 @@
       form.addEventListener('submit', async function (e) {
         e.preventDefault();
 
-        const serialVal  = serialInp.value.trim();
-        const invoiceVal = invoiceInp.value.trim();
+        const serialVal = serialInp.value.trim();
 
-        let valid = true;
-        if (!serialVal)  { showError(serialInp,  serialErr);  valid = false; }
-        if (!invoiceVal) { showError(invoiceInp, invoiceErr); valid = false; }
-        if (!valid) return;
+        if (!serialVal) { showError(serialInp, serialErr); return; }
 
         /* Clear previous result */
         resultSec.classList.remove('visible');
@@ -809,7 +778,7 @@
         submitBtn.innerHTML = '<span class="btn-spinner"></span> Checking&hellip;';
 
         try {
-          const data = await simulateApiCall(serialVal, invoiceVal);
+          const data = await lookupWarranty(serialVal);
           renderSuccess(data);
         } catch (err) {
           renderError(err.message || 'An unexpected error occurred. Please try again.');
