@@ -18,6 +18,25 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
+      /* Default Light Theme */
+      --bg:         #f6f8fa;
+      --surface:    #ffffff;
+      --surface2:   #f3f4f6;
+      --border:     #d0d7de;
+      --accent:     #2da44e;
+      --accent-h:   #2c974b;
+      --danger:     #cf222e;
+      --danger-h:   #b31d28;
+      --warn:       #bf8700;
+      --text:       #1f2328;
+      --muted:      #656d76;
+      --blue:       #0969da;
+      --blue-h:     #0550ae;
+      --radius:     10px;
+      --transition: 0.2s ease;
+    }
+
+    html.dark-theme {
       --bg:         #0d1117;
       --surface:    #161b22;
       --surface2:   #21262d;
@@ -25,13 +44,12 @@
       --accent:     #238636;
       --accent-h:   #2ea043;
       --danger:     #da3633;
+      --danger-h:   #b32d2c;
       --warn:       #d29922;
       --text:       #e6edf3;
       --muted:      #8b949e;
       --blue:       #1f6feb;
       --blue-h:     #388bfd;
-      --radius:     10px;
-      --transition: 0.2s ease;
     }
 
     html, body {
@@ -403,6 +421,54 @@
 
     .btn-secondary:hover { border-color: var(--text); color: var(--text); }
 
+    .btn-danger {
+      padding: 12px 28px;
+      background: transparent;
+      color: var(--danger);
+      border: 1px solid var(--danger);
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      transition: background var(--transition), color var(--transition);
+    }
+
+    .btn-danger:hover { background: var(--danger); color: #fff; }
+
+    /* ── Search Bar for Manage Mode ── */
+    #search-box-container {
+      display: none;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+    #search-box-container.visible { display: block; }
+
+    .search-wrapper { display: flex; gap: 10px; }
+    .search-wrapper input {
+      flex: 1;
+      padding: 12px 16px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-size: 14px;
+    }
+    .search-wrapper input:focus { outline: none; border-color: var(--blue); }
+    .btn-search {
+      padding: 0 24px;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .btn-search:hover { background: var(--blue-h); }
+
     /* ── Toast notifications ── */
     #toast-container {
       position: fixed;
@@ -561,13 +627,16 @@
         <a href="#" class="active" id="nav-add">
           <span class="nav-icon">➕</span> Add Record
         </a>
-        <a href="#" id="nav-preview">
-          <span class="nav-icon">🔍</span> Preview Lookup
+        <a href="#" id="nav-manage">
+          <span class="nav-icon">✏️</span> Manage Records
         </a>
       </nav>
 
       <div class="sidebar-bottom">
-        <button id="signout-btn" type="button" title="Sign out">
+        <button id="theme-toggle" type="button" title="Toggle Theme">
+          <span>🌗</span> Switch Theme
+        </button>
+        <button id="signout-btn" type="button" title="Sign out" style="margin-top: 10px;">
           <span>🔓</span> Sign Out
         </button>
       </div>
@@ -578,8 +647,8 @@
 
       <!-- Page header -->
       <div class="page-header">
-        <h2>➕ Add Warranty Record</h2>
-        <p>Submit a new warranty registration into the backend system. All starred fields are required.</p>
+        <h2 id="page-title">➕ Add Warranty Record</h2>
+        <p id="page-desc">Submit a new warranty registration into the backend system. All starred fields are required.</p>
       </div>
 
       <!-- Warning banner -->
@@ -594,8 +663,18 @@
         <span id="api-status-text">Checking API connectivity…</span>
       </div>
 
+      <!-- Search box (Manage Mode) -->
+      <div id="search-box-container">
+        <div style="font-size: 13px; font-weight: 600; margin-bottom: 8px;">Find Record by Serial Number:</div>
+        <div class="search-wrapper">
+          <input type="text" id="search-sn" placeholder="e.g. RK-2024-SN-00123" autocomplete="off">
+          <button type="button" id="btn-search-sn" class="btn-search">Search</button>
+        </div>
+      </div>
+
       <!-- ── FORM CARD ── -->
-      <form id="warranty-admin-form" novalidate>
+      <div id="form-container">
+        <form id="warranty-admin-form" novalidate>
 
         <!-- Section 1: Product Identity -->
         <div class="form-card">
@@ -692,10 +771,14 @@
           <button type="submit" class="btn-submit" id="submit-btn">
             <span>✅</span> Submit Warranty Record
           </button>
+          <button type="button" class="btn-danger" id="delete-btn" style="display: none;">
+            <span>🗑️</span> Delete
+          </button>
           <button type="button" class="btn-secondary" id="reset-btn">Clear Form</button>
         </div>
 
       </form><!-- /#warranty-admin-form -->
+      </div><!-- /#form-container -->
 
     </main><!-- /.admin-content -->
   </div><!-- /.admin-layout -->
@@ -752,6 +835,21 @@
   const statusDot     = document.getElementById('api-status-dot');
   const statusText    = document.getElementById('api-status-text');
   const toastContainer= document.getElementById('toast-container');
+  
+  // Navigation & Modes
+  const navAdd        = document.getElementById('nav-add');
+  const navManage     = document.getElementById('nav-manage');
+  const pageTitle     = document.getElementById('page-title');
+  const pageDesc      = document.getElementById('page-desc');
+  const searchBoxCont = document.getElementById('search-box-container');
+  const searchSn      = document.getElementById('search-sn');
+  const btnSearchSn   = document.getElementById('btn-search-sn');
+  const formContainer = document.getElementById('form-container');
+  const deleteBtn     = document.getElementById('delete-btn');
+  const themeToggle   = document.getElementById('theme-toggle');
+
+  let currentMode = 'ADD'; // 'ADD' or 'MANAGE'
+  let loadedSerialNumber = null;
 
   // Form fields
   const fields = {
@@ -823,8 +921,6 @@
         let data = {};
         try { data = await resp.json(); } catch(e) {}
         
-        // Retrieve token (check multiple common formats: .token, .jwt, string response, etc)
-        // If string, data might be the token. Adapt as needed based on exact backend shape.
         const token = data.token || data.accessToken || data.jwt || (typeof data === 'string' ? data : null);
         
         if (token) {
@@ -847,12 +943,130 @@
     } finally {
       loginBtn.disabled = false;
       loginBtn.textContent = 'Sign In';
-      passwordInput.value = ''; // clear password on fail or success for security
+      passwordInput.value = '';
     }
   });
 
   signOutBtn.addEventListener('click', function () {
     if (confirm('Sign out of the admin panel?')) logout();
+  });
+
+  /* ── THEME SWITCHER ─────────────────────────────────── */
+  
+  if (localStorage.getItem('rk_theme') === 'dark') {
+    document.documentElement.classList.add('dark-theme');
+  }
+
+  themeToggle.addEventListener('click', function() {
+    document.documentElement.classList.toggle('dark-theme');
+    const isDark = document.documentElement.classList.contains('dark-theme');
+    localStorage.setItem('rk_theme', isDark ? 'dark' : 'light');
+  });
+
+  /* ── MODE SWITCHING ─────────────────────────────────── */
+
+  function setMode(mode) {
+    currentMode = mode;
+    adminForm.reset();
+    resetErrors();
+    loadedSerialNumber = null;
+
+    navAdd.classList.remove('active');
+    navManage.classList.remove('active');
+    fields.serialNumber.disabled = false; // Add mode allows typing ID
+
+    if (mode === 'ADD') {
+      navAdd.classList.add('active');
+      pageTitle.innerHTML = '➕ Add Warranty Record';
+      pageDesc.textContent = 'Submit a new warranty registration into the backend system. All starred fields are required.';
+      searchBoxCont.classList.remove('visible');
+      formContainer.style.display = 'block';
+      deleteBtn.style.display = 'none';
+      submitBtn.innerHTML = '<span>✅</span> Submit Warranty Record';
+      fields.companyName.value = 'RACEKON INDUSTRIES PVT. LTD.';
+    } else {
+      navManage.classList.add('active');
+      pageTitle.innerHTML = '✏️ Manage Warranty Records';
+      pageDesc.textContent = 'Search for an existing warranty by serial number to update or delete it.';
+      searchBoxCont.classList.add('visible');
+      formContainer.style.display = 'none'; // hidden until loaded
+      deleteBtn.style.display = 'inline-block';
+      submitBtn.innerHTML = '<span>🔄</span> Update Record';
+    }
+  }
+
+  navAdd.addEventListener('click', function(e) {
+    e.preventDefault(); setMode('ADD');
+  });
+
+  navManage.addEventListener('click', function(e) {
+    e.preventDefault(); setMode('MANAGE');
+  });
+
+  function resetErrors() {
+    requiredFields.forEach(function (key) {
+      fields[key].classList.remove('error');
+      fieldErrors[key].classList.remove('visible');
+    });
+  }
+
+  /* ── MANAGE SEARCH (LOAD DATA) ──────────────────────── */
+
+  function formatHtmlDate(apiDate) {
+    // apiDate "DD-MM-YYYY" -> HTML "YYYY-MM-DD"
+    if (!apiDate) return '';
+    const p = apiDate.split('-');
+    if (p.length !== 3) return apiDate;
+    return p[2] + '-' + p[1] + '-' + p[0];
+  }
+
+  btnSearchSn.addEventListener('click', async function() {
+    const sn = searchSn.value.trim().toUpperCase();
+    if (!sn) {
+      showToast('Please enter a Serial Number', 'warn');
+      return;
+    }
+
+    const prevBtnTxt = btnSearchSn.textContent;
+    btnSearchSn.textContent = 'Loading...';
+    btnSearchSn.disabled = true;
+
+    try {
+      // Lookup uses public endpoint
+      const res = await fetch(`${API_BASE}/contact/warranty?serialNumber=${encodeURIComponent(sn)}`, {
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+        loadedSerialNumber = data.serialNumber;
+        
+        fields.serialNumber.value       = data.serialNumber || '';
+        fields.serialNumber.disabled    = true; // cannot edit PK
+        fields.invoiceNumber.value      = data.invoiceNumber || '';
+        fields.productName.value        = data.productName || '';
+        fields.companyName.value        = data.companyName || 'RACEKON INDUSTRIES PVT. LTD.';
+        fields.purchaseDate.value       = formatHtmlDate(data.purchaseDate) || '';
+        fields.warrantyExpiryDate.value = formatHtmlDate(data.warrantyExpiryDate) || '';
+        fields.dealer.value             = data.dealer || '';
+        
+        resetErrors();
+        formContainer.style.display = 'block';
+        showToast('Record loaded for editing', 'success');
+      } else if (res.status === 404) {
+        showToast('Record not found', 'error');
+        formContainer.style.display = 'none';
+      } else {
+        throw new Error('API returned ' + res.status);
+      }
+    } catch (err) {
+      console.error(err);
+      showToast('Failed to load record from server.', 'error');
+      formContainer.style.display = 'none';
+    } finally {
+      btnSearchSn.textContent = prevBtnTxt;
+      btnSearchSn.disabled = false;
+    }
   });
 
   /* ── API STATUS CHECK ───────────────────────────────── */
@@ -918,11 +1132,11 @@
     return parts[2] + '-' + parts[1] + '-' + parts[0];
   }
 
-  /* ── SUBMIT ──────────────────────────────────────────── */
+  /* ── SUBMIT (CREATE OR UPDATE) ───────────────────────── */
 
   adminForm.addEventListener('submit', async function (e) {
     e.preventDefault();
-    console.log('Warranty form submission triggered');
+    console.log('Warranty form submission triggered in mode:', currentMode);
 
     try {
       if (!isLoggedIn()) { logout(); return; }
@@ -942,19 +1156,21 @@
         dealer:             fields.dealer.value.trim() || undefined,
       };
 
-      // Remove undefined keys
       Object.keys(payload).forEach(function (k) {
         if (payload[k] === undefined) delete payload[k];
       });
 
-      console.log('Validation passed, payload constructed:', payload);
-
       submitBtn.disabled = true;
-      submitBtn.innerHTML = '<span class="spinner"></span> Submitting…';
+      submitBtn.innerHTML = '<span class="spinner"></span> Saving…';
 
-      console.log('Sending API Request to:', WARRANTY_CREATE_API);
-      const resp = await fetch(WARRANTY_CREATE_API, {
-        method:  'POST',
+      const method = currentMode === 'ADD' ? 'POST' : 'PUT';
+      // If EDIT, hit /admin/warranty/{serialNumber} or keep it at /admin/warranty using PUT.
+      // Usually REST updates use path variable for the resource.
+      const ep = currentMode === 'ADD' ? WARRANTY_CREATE_API : `${API_BASE}/admin/warranty/${encodeURIComponent(payload.serialNumber)}`;
+
+      console.log(`Sending ${method} Request to:`, ep);
+      const resp = await fetch(ep, {
+        method:  method,
         headers: {
           'Content-Type':  'application/json',
           'Accept':        'application/json',
@@ -964,39 +1180,74 @@
       });
 
       console.log('API Response status:', resp.status);
-      let respData;
-      try { respData = await resp.json(); } catch (parseErr) { respData = {}; }
+      let respData = {};
+      try { respData = await resp.json(); } catch (parseErr) {}
 
       if (resp.ok || resp.status === 201) {
-        showToast('✅ Warranty record created successfully!', 'success');
-        adminForm.reset();
-        // Re-set the pre-filled company name
-        fields.companyName.value = 'RACEKON INDUSTRIES PVT. LTD.';
+        showToast(`✅ Record ${currentMode === 'ADD' ? 'created' : 'updated'} successfully!`, 'success');
+        if (currentMode === 'ADD') {
+          adminForm.reset();
+          fields.companyName.value = 'RACEKON INDUSTRIES PVT. LTD.';
+        }
       } else {
         throw new Error(respData.message || 'Server error ' + resp.status);
       }
-
     } catch (err) {
       console.error('Submission error caught:', err);
       const isNetwork = err instanceof TypeError;
-      const msg = isNetwork
-        ? 'Network error – API is unreachable. Check your connection and API server.'
-        : (err.message || 'An unexpected error occurred.');
+      const msg = isNetwork ? 'Network error – API unreachable.' : err.message;
       showToast('❌ ' + msg, 'error');
     } finally {
       submitBtn.disabled = false;
-      submitBtn.innerHTML = '<span>✅</span> Submit Warranty Record';
+      submitBtn.innerHTML = currentMode === 'ADD' ? '<span>✅</span> Submit Warranty Record' : '<span>🔄</span> Update Record';
     }
   });
 
-  resetBtn.addEventListener('click', function () {
-    if (confirm('Clear all form fields?')) {
-      adminForm.reset();
-      fields.companyName.value = 'RACEKON INDUSTRIES PVT. LTD.';
-      requiredFields.forEach(function (key) {
-        fields[key].classList.remove('error');
-        fieldErrors[key].classList.remove('visible');
+  /* ── DELETE ──────────────────────────────────────────── */
+
+  deleteBtn.addEventListener('click', async function() {
+    if (!loadedSerialNumber) return;
+    if (!confirm(`Are you sure you want to permanently delete record ${loadedSerialNumber}?`)) return;
+
+    deleteBtn.disabled = true;
+    deleteBtn.innerHTML = '<span class="spinner"></span>';
+
+    try {
+      const ep = `${API_BASE}/admin/warranty/${encodeURIComponent(loadedSerialNumber)}`;
+      const resp = await fetch(ep, {
+        method: 'DELETE',
+        headers: {
+          'Authorization': 'Bearer ' + getAdminToken()
+        }
       });
+
+      if (resp.ok) {
+        showToast('✅ Record deleted.', 'success');
+        formContainer.style.display = 'none';
+        searchSn.value = '';
+      } else {
+        throw new Error('Server returned ' + resp.status);
+      }
+    } catch (err) {
+      const msg = (err instanceof TypeError) ? 'Network error' : err.message;
+      showToast('❌ Failed to delete: ' + msg, 'error');
+    } finally {
+      deleteBtn.disabled = false;
+      deleteBtn.innerHTML = '<span>🗑️</span> Delete';
+    }
+  });
+
+  /* ── RESET ───────────────────────────────────────────── */
+
+  resetBtn.addEventListener('click', function () {
+    if (confirm('Clear form?')) {
+      if (currentMode === 'ADD') {
+        adminForm.reset();
+        fields.companyName.value = 'RACEKON INDUSTRIES PVT. LTD.';
+      } else {
+        formContainer.style.display = 'none';
+      }
+      resetErrors();
     }
   });
 
