@@ -527,6 +527,11 @@
 
     <form id="login-form" novalidate>
       <div class="login-field">
+        <span class="field-icon">👤</span>
+        <input type="text" id="admin-username" placeholder="Username"
+               autocomplete="username" aria-label="Username" required>
+      </div>
+      <div class="login-field">
         <span class="field-icon">🔑</span>
         <input type="password" id="admin-password" placeholder="Admin password"
                autocomplete="current-password" aria-label="Admin Password" required>
@@ -708,36 +713,23 @@
 
   /* ── CONFIGURATION ──────────────────────────────────── */
 
-  // Change this to your actual admin password.
-  // In production, replace with a server-side session check.
-  const ADMIN_PASSWORD = 'racekon@admin2024';
-
   // Backend API endpoint
   const API_BASE = 'https://aksystem.in:8443';
+  const SIGN_IN_API         = API_BASE + '/admin/sign-in';
   const WARRANTY_CREATE_API = API_BASE + '/admin/warranty';
   const WARRANTY_PING_API   = API_BASE + '/contact/warranty?serialNumber=PING_TEST';
 
-  // Admin token – sent as Bearer token to authenticate admin API calls.
-  // Must match what the backend expects.
+  // Token key for sessionStorage
   const ADMIN_TOKEN_KEY = 'rk_admin_token';
-  // For simplicity, we derive a token from the password hash.
-  // Backend should validate this against a stored secret.
+
   function getAdminToken() {
-    return btoa('racekon-admin:' + ADMIN_PASSWORD);
+    return sessionStorage.getItem(ADMIN_TOKEN_KEY) || '';
   }
 
   /* ── SESSION ────────────────────────────────────────── */
 
   function isLoggedIn() {
-    return sessionStorage.getItem(ADMIN_TOKEN_KEY) === getAdminToken();
-  }
-
-  function login(password) {
-    if (password === ADMIN_PASSWORD) {
-      sessionStorage.setItem(ADMIN_TOKEN_KEY, getAdminToken());
-      return true;
-    }
-    return false;
+    return !!sessionStorage.getItem(ADMIN_TOKEN_KEY);
   }
 
   function logout() {
@@ -804,24 +796,59 @@
     showLoginOverlay();
   }
 
-  loginForm.addEventListener('submit', function (e) {
+  loginForm.addEventListener('submit', async function (e) {
     e.preventDefault();
+    const unInput = document.getElementById('admin-username');
+    const un = unInput ? unInput.value.trim() : '';
     const pw = passwordInput.value.trim();
-    loginBtn.disabled = true;
-    loginBtn.textContent = 'Verifying…';
 
-    setTimeout(function () {
-      if (login(pw)) {
-        loginError.classList.remove('visible');
-        showAdminShell();
+    if (!un || !pw) {
+      loginError.textContent = 'Please enter both username and password.';
+      loginError.classList.add('visible');
+      return;
+    }
+
+    loginBtn.disabled = true;
+    loginBtn.textContent = 'Signing in…';
+    loginError.classList.remove('visible');
+
+    try {
+      const resp = await fetch(SIGN_IN_API, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({ username: un, password: pw })
+      });
+
+      if (resp.ok) {
+        let data = {};
+        try { data = await resp.json(); } catch(e) {}
+        
+        // Retrieve token (check multiple common formats: .token, .jwt, string response, etc)
+        // If string, data might be the token. Adapt as needed based on exact backend shape.
+        const token = data.token || data.accessToken || data.jwt || (typeof data === 'string' ? data : null);
+        
+        if (token) {
+          sessionStorage.setItem(ADMIN_TOKEN_KEY, token);
+          loginError.classList.remove('visible');
+          showAdminShell();
+        } else {
+          loginError.textContent = 'Sign in successful, but no token returned. Check API format.';
+          loginError.classList.add('visible');
+        }
       } else {
+        const isAuthError = resp.status === 401 || resp.status === 403;
+        loginError.textContent = isAuthError ? 'Incorrect username or password.' : 'Server Error HTTP ' + resp.status;
         loginError.classList.add('visible');
-        passwordInput.value = '';
-        passwordInput.focus();
       }
+    } catch (err) {
+      console.error('Sign-in API failed:', err);
+      loginError.textContent = 'Network error. Cannot reach API to sign in.';
+      loginError.classList.add('visible');
+    } finally {
       loginBtn.disabled = false;
       loginBtn.textContent = 'Sign In';
-    }, 400); // tiny delay to prevent brute-force timing attack feel
+      passwordInput.value = ''; // clear password on fail or success for security
+    }
   });
 
   signOutBtn.addEventListener('click', function () {
@@ -895,32 +922,37 @@
 
   adminForm.addEventListener('submit', async function (e) {
     e.preventDefault();
-
-    if (!isLoggedIn()) { logout(); return; }
-    if (!validateForm()) {
-      showToast('Please fill in all required fields.', 'error');
-      return;
-    }
-
-    const payload = {
-      serialNumber:       fields.serialNumber.value.trim().toUpperCase(),
-      invoiceNumber:      fields.invoiceNumber.value.trim().toUpperCase(),
-      productName:        fields.productName.value.trim(),
-      companyName:        fields.companyName.value.trim(),
-      purchaseDate:       toApiDate(fields.purchaseDate.value),
-      warrantyExpiryDate: toApiDate(fields.warrantyExpiryDate.value),
-      dealer:             fields.dealer.value.trim() || undefined,
-    };
-
-    // Remove undefined keys
-    Object.keys(payload).forEach(function (k) {
-      if (payload[k] === undefined) delete payload[k];
-    });
-
-    submitBtn.disabled = true;
-    submitBtn.innerHTML = '<span class="spinner"></span> Submitting…';
+    console.log('Warranty form submission triggered');
 
     try {
+      if (!isLoggedIn()) { logout(); return; }
+      if (!validateForm()) {
+        console.log('Validation failed: Missing required fields.');
+        showToast('Please fill in all required fields.', 'error');
+        return;
+      }
+
+      const payload = {
+        serialNumber:       fields.serialNumber.value.trim().toUpperCase(),
+        invoiceNumber:      fields.invoiceNumber.value.trim().toUpperCase(),
+        productName:        fields.productName.value.trim(),
+        companyName:        fields.companyName.value.trim(),
+        purchaseDate:       toApiDate(fields.purchaseDate.value),
+        warrantyExpiryDate: toApiDate(fields.warrantyExpiryDate.value),
+        dealer:             fields.dealer.value.trim() || undefined,
+      };
+
+      // Remove undefined keys
+      Object.keys(payload).forEach(function (k) {
+        if (payload[k] === undefined) delete payload[k];
+      });
+
+      console.log('Validation passed, payload constructed:', payload);
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="spinner"></span> Submitting…';
+
+      console.log('Sending API Request to:', WARRANTY_CREATE_API);
       const resp = await fetch(WARRANTY_CREATE_API, {
         method:  'POST',
         headers: {
@@ -931,8 +963,9 @@
         body: JSON.stringify(payload),
       });
 
+      console.log('API Response status:', resp.status);
       let respData;
-      try { respData = await resp.json(); } catch { respData = {}; }
+      try { respData = await resp.json(); } catch (parseErr) { respData = {}; }
 
       if (resp.ok || resp.status === 201) {
         showToast('✅ Warranty record created successfully!', 'success');
@@ -944,6 +977,7 @@
       }
 
     } catch (err) {
+      console.error('Submission error caught:', err);
       const isNetwork = err instanceof TypeError;
       const msg = isNetwork
         ? 'Network error – API is unreachable. Check your connection and API server.'
