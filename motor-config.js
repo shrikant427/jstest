@@ -60,7 +60,7 @@ var MOTOR_CONFIG = {
     '  max-width: 100% !important;',
     '  margin: 0 auto !important;',
     '  display: inline-block !important;',
-    '  object-fit: cover !important;',
+    '  object-fit: contain !important;',
     '}',
     '/* Fixed on mobile screens (< 768px) – not reduced by desktop scale */',
     '@media (max-width: 767px) {',
@@ -91,7 +91,7 @@ var MOTOR_CONFIG = {
       if (img.classList.contains('motor-product-img') || (img.src && img.src.indexOf('-motor.png') !== -1)) {
         img.style.setProperty('width', targetW + 'px', 'important');
         img.style.setProperty('height', targetH + 'px', 'important');
-        img.style.setProperty('object-fit', 'cover', 'important');
+        img.style.setProperty('object-fit', 'contain', 'important');
         img.style.setProperty('margin', '0 auto', 'important');
         img.style.setProperty('display', 'inline-block', 'important');
       }

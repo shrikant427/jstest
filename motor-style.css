@@ -24,7 +24,7 @@
   max-width: 100% !important;
   margin: 0 auto !important;
   display: inline-block !important;
-  object-fit: cover !important;
+  object-fit: contain !important;
 }
 
 /* Mobile sizing (fixed at 280px x 306px, never reduced) */
