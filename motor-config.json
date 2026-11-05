@@ -1,7 +1,7 @@
 {
-  "scale_percentage": 150.0,
-  "base_width_px": 366,
-  "base_height_px": 400,
-  "mobile_base_width_px": 280,
-  "mobile_base_height_px": 306
+  "desktop_scale_percentage": 130,
+  "desktop_base_width_px": 366,
+  "desktop_base_height_px": 500,
+  "mobile_fixed_width_px": 280,
+  "mobile_fixed_height_px": 306
 }
