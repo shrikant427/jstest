@@ -5,14 +5,14 @@
    images across all 10 motor pages in 1 go!
    
    Examples:
-     --motor-scale: 1.0;   /* 100% (Default: 366px x 400px) */
-     --motor-scale: 1.15;  /* 115% */
-     --motor-scale: 0.9;   /* 90%  */
+     --motor-scale: 1.000;   /* 100% (Default: 366px x 400px) */
+     --motor-scale: 1.000;  /* 115% */
+     --motor-scale: 1.000;   /* 90%  */
    ======================================================== */
 
 :root {
   /* Scale factor: 1.0 = 100%, 1.2 = 120%, 0.8 = 80% */
-  --motor-scale: 1.0;
+  --motor-scale: 1.000;
 
   --motor-base-width: 366px;
   --motor-base-height: 400px;
