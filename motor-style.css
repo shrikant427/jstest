@@ -1,0 +1,43 @@
+/* ========================================================
+   RACEKON MOTOR IMAGES STYLES & CONFIGURATION
+   ========================================================
+   Change the scale percentage below to resize all motor
+   images across all 10 motor pages in 1 go!
+   
+   Examples:
+     --motor-scale: 1.0;   /* 100% (Default: 366px x 400px) */
+     --motor-scale: 1.15;  /* 115% */
+     --motor-scale: 0.9;   /* 90%  */
+   ======================================================== */
+
+:root {
+  /* Scale factor: 1.0 = 100%, 1.2 = 120%, 0.8 = 80% */
+  --motor-scale: 1.0;
+
+  --motor-base-width: 366px;
+  --motor-base-height: 400px;
+  --motor-mobile-width: 280px;
+  --motor-mobile-height: 306px;
+}
+
+.elementor-widget-image .elementor-image {
+  text-align: center;
+}
+
+.elementor-widget-image .elementor-image img.motor-product-img,
+.elementor-widget-image .elementor-image img[src*="-motor.png"] {
+  width: calc(var(--motor-base-width) * var(--motor-scale)) !important;
+  height: calc(var(--motor-base-height) * var(--motor-scale)) !important;
+  max-width: 100%;
+  margin: 0 auto;
+  display: inline-block;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .elementor-widget-image .elementor-image img.motor-product-img,
+  .elementor-widget-image .elementor-image img[src*="-motor.png"] {
+    width: calc(var(--motor-mobile-width) * var(--motor-scale)) !important;
+    height: calc(var(--motor-mobile-height) * var(--motor-scale)) !important;
+  }
+}
