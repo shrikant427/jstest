@@ -27,47 +27,25 @@
        Matches existing RACEKON site theme & Elementor styles
     ====================================================== */
 
-    /* ── Compact hero banner ── */
+    /* ── Hero banner ── */
     .warranty-hero-banner {
-      position: relative;
       width: 100%;
-      height: 160px;
-      overflow: hidden;
-      display: block;
+      background: #f8fafc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      border-bottom: 1px solid #e2e8f0;
     }
     .warranty-hero-img {
       width: 100%;
-      height: 160px;
-      object-fit: cover;
-      object-position: center 40%;
+      max-width: 1200px;
+      height: auto;
+      max-height: 520px;
+      object-fit: contain;
       display: block;
-      filter: brightness(0.55);
-    }
-    .warranty-hero-overlay {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .warranty-hero-text {
-      text-align: center;
-      color: #fff;
-      padding: 0 20px;
-    }
-    .warranty-hero-text h1 {
-      margin: 0 0 6px;
-      font-size: 28px;
-      font-weight: 800;
-      letter-spacing: 0.5px;
-      color: #fff !important;
-      text-shadow: 0 2px 8px rgba(0,0,0,0.5);
-    }
-    .warranty-hero-text p {
-      margin: 0;
-      font-size: 14px;
-      color: rgba(255,255,255,0.88) !important;
-      text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      margin: 0 auto;
     }
 
     /* ── Ticker / marquee banner ── */
@@ -460,15 +438,9 @@
                   <div class="elementor-inner">
                     <div class="elementor-section-wrap">
 
-                      <!-- Hero Banner – compact overlay strip -->
+                      <!-- Hero Banner -->
                       <section class="warranty-hero-banner">
-                        <img src="../images/warranty_new.png" alt="Warranty – RACEKON" class="warranty-hero-img">
-                        <div class="warranty-hero-overlay">
-                          <div class="warranty-hero-text">
-                            <h1>Product Warranty</h1>
-                            <p>Verify your RACEKON product warranty with just your Serial Number</p>
-                          </div>
-                        </div>
+                        <img src="../images/warranty_new.png" alt="Product Warranty – RACEKON" class="warranty-hero-img">
                       </section>
 
                       <!-- Ticker Banner – full-width, outside elementor container constraints -->
