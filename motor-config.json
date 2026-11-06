@@ -1,7 +1,7 @@
 {
-  "desktop_scale_percentage": 130,
+  "desktop_scale_percentage": 130.0,
   "desktop_base_width_px": 366,
-  "desktop_base_height_px": 500,
+  "desktop_base_height_px": 400,
   "mobile_fixed_width_px": 280,
   "mobile_fixed_height_px": 306
 }

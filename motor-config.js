@@ -9,13 +9,14 @@
  * (Mobile dimensions stay fixed at 280px x 306px and are NOT reduced)
  *
  * Examples:
- *   desktop_scale_percentage: 130   -> Desktop: 183px x 200px (Compact)
- *   desktop_scale_percentage: 130   -> Desktop: 256px x 280px (Medium)
- *   desktop_scale_percentage: 130  -> Desktop: 366px x 400px (Base)
+ *   desktop_scale_percentage: 130.0   -> Desktop: 183px x 200px (Compact)
+ *   desktop_scale_percentage: 130.0   -> Desktop: 256px x 280px (Medium)
+ *   desktop_scale_percentage: 130.0  -> Desktop: 366px x 400px (Base)
+ *   desktop_scale_percentage: 130.0  -> Desktop: 476px x 520px
  * ========================================================
  */
 var MOTOR_CONFIG = {
-  desktop_scale_percentage: 130,  // <-- CHANGE THIS VALUE for desktop scaling
+  desktop_scale_percentage: 130.0,  // <-- CHANGE THIS VALUE for desktop scaling
   desktop_base_width_px: 366,
   desktop_base_height_px: 400,
   mobile_fixed_width_px: 280,    // Fixed mobile width (stays unchanged)
@@ -50,6 +51,38 @@ var MOTOR_CONFIG = {
     '  --motor-mobile-width: ' + mobW + 'px;',
     '  --motor-mobile-height: ' + mobH + 'px;',
     '}',
+    'html, body {',
+    '  overflow-x: hidden;',
+    '}',
+    '.motor-hero-section {',
+    '  padding-top: 0 !important;',
+    '}',
+    '.motor-hero-section > .elementor-container > .elementor-row > .elementor-column > .elementor-column-wrap > .elementor-widget-wrap > .elementor-widget-spacer:first-child {',
+    '  display: none !important;',
+    '}',
+    '.motor-image-banner-wrap,',
+    '.elementor-widget-image .elementor-image.motor-image-banner-wrap {',
+    '  width: 100vw !important;',
+    '  position: relative !important;',
+    '  left: 50% !important;',
+    '  right: 50% !important;',
+    '  margin-left: -50vw !important;',
+    '  margin-right: -50vw !important;',
+    '  background-color: #ffffff !important;',
+    '  display: flex !important;',
+    '  justify-content: center !important;',
+    '  align-items: center !important;',
+    '  text-align: center !important;',
+    '  box-sizing: border-box !important;',
+    '  padding: 24px 0 !important;',
+    '  margin-bottom: 40px !important;',
+    '}',
+    '.motor-hero-section .elementor-widget-image + .elementor-widget-spacer {',
+    '  display: none !important;',
+    '}',
+    '.motor-hero-section + .elementor-top-section {',
+    '  padding-top: 0 !important;',
+    '}',
     '.elementor-widget-image .elementor-image {',
     '  text-align: center !important;',
     '}',
@@ -64,6 +97,14 @@ var MOTOR_CONFIG = {
     '}',
     '/* Fixed on mobile screens (< 768px) – not reduced by desktop scale */',
     '@media (max-width: 767px) {',
+    '  .motor-hero-section {',
+    '    padding-top: 0 !important;',
+    '  }',
+    '  .motor-image-banner-wrap,',
+    '  .elementor-widget-image .elementor-image.motor-image-banner-wrap {',
+    '    padding: 16px 0 !important;',
+    '    margin-bottom: 25px !important;',
+    '  }',
     '  .elementor-widget-image .elementor-image img.motor-product-img,',
     '  .elementor-widget-image .elementor-image img[src*="-motor.png"] {',
     '    width: ' + mobW + 'px !important;',
@@ -94,6 +135,11 @@ var MOTOR_CONFIG = {
         img.style.setProperty('object-fit', 'contain', 'important');
         img.style.setProperty('margin', '0 auto', 'important');
         img.style.setProperty('display', 'inline-block', 'important');
+
+        var parent = img.closest('.elementor-image');
+        if (parent && !parent.classList.contains('motor-image-banner-wrap')) {
+          parent.classList.add('motor-image-banner-wrap');
+        }
       }
     });
   }

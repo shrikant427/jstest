@@ -12,6 +12,50 @@
   --motor-mobile-height: 306px;
 }
 
+/* Prevent horizontal scrollbars caused by 100vw breakout */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Hero section containing the motor image */
+.motor-hero-section {
+  padding-top: 0 !important;
+}
+
+/* Hide top spacer widget in 14-kg and 80-kg so banner starts cleanly below header */
+.motor-hero-section > .elementor-container > .elementor-row > .elementor-column > .elementor-column-wrap > .elementor-widget-wrap > .elementor-widget-spacer:first-child {
+  display: none !important;
+}
+
+/* Full-width matching white background for motor product images */
+.motor-image-banner-wrap,
+.elementor-widget-image .elementor-image.motor-image-banner-wrap {
+  width: 100vw !important;
+  position: relative !important;
+  left: 50% !important;
+  right: 50% !important;
+  margin-left: -50vw !important;
+  margin-right: -50vw !important;
+  background-color: #ffffff !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
+  padding: 24px 0 !important;
+  margin-bottom: 40px !important;
+}
+
+/* In the 8 pages where a spacer widget follows the image, hide it so margin-bottom sets the clean 40px gap */
+.motor-hero-section .elementor-widget-image + .elementor-widget-spacer {
+  display: none !important;
+}
+
+/* In 14-kg and 80-kg where next section follows, reset excessive top padding so margin-bottom sets the exact 40px gap */
+.motor-hero-section + .elementor-top-section {
+  padding-top: 0 !important;
+}
+
 .elementor-widget-image .elementor-image {
   text-align: center !important;
 }
@@ -27,8 +71,18 @@
   object-fit: contain !important;
 }
 
-/* Mobile sizing (fixed at 280px x 306px, never reduced) */
+/* Mobile sizing & spacing (< 768px) */
 @media (max-width: 767px) {
+  .motor-hero-section {
+    padding-top: 0 !important;
+  }
+
+  .motor-image-banner-wrap,
+  .elementor-widget-image .elementor-image.motor-image-banner-wrap {
+    padding: 16px 0 !important;
+    margin-bottom: 25px !important;
+  }
+
   .elementor-widget-image .elementor-image img.motor-product-img,
   .elementor-widget-image .elementor-image img[src*="-motor.png"] {
     width: var(--motor-mobile-width, 280px) !important;
