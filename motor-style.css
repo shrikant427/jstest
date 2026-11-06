@@ -17,13 +17,67 @@ html, body {
   overflow-x: hidden;
 }
 
-/* Hero section containing the motor image */
-.motor-hero-section {
-  padding-top: 0 !important;
+/* Dedicated white styling for 14-kg and 80-kg image sections */
+.elementor-element-00da342,
+.elementor-element-37ec16e,
+.motor-hero-section[data-id="00da342"],
+.motor-hero-section[data-id="37ec16e"] {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
 }
 
-/* Hide top spacer widget in 14-kg and 80-kg so banner starts cleanly below header */
-.motor-hero-section > .elementor-container > .elementor-row > .elementor-column > .elementor-column-wrap > .elementor-widget-wrap > .elementor-widget-spacer:first-child {
+/* Zero out all top spacing above the motor image banner across all breakpoints */
+.motor-hero-section,
+.elementor-section.motor-hero-section,
+.elementor-top-section.motor-hero-section,
+.motor-hero-section .elementor-container,
+.motor-hero-section .elementor-row,
+.motor-hero-section .elementor-column,
+.motor-hero-section .elementor-column-wrap,
+.motor-hero-section .elementor-widget-wrap,
+.motor-hero-section .elementor-widget,
+.motor-hero-section .elementor-widget-container,
+.motor-hero-section .elementor-image {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+@media (max-width: 1024px) {
+  .motor-hero-section,
+  .elementor-section.motor-hero-section,
+  .elementor-top-section.motor-hero-section,
+  .motor-hero-section .elementor-container,
+  .motor-hero-section .elementor-row,
+  .motor-hero-section .elementor-column,
+  .motor-hero-section .elementor-column-wrap,
+  .motor-hero-section .elementor-widget-wrap,
+  .motor-hero-section .elementor-widget,
+  .motor-hero-section .elementor-widget-container,
+  .motor-hero-section .elementor-image {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .motor-hero-section,
+  .elementor-section.motor-hero-section,
+  .elementor-top-section.motor-hero-section,
+  .motor-hero-section .elementor-container,
+  .motor-hero-section .elementor-row,
+  .motor-hero-section .elementor-column,
+  .motor-hero-section .elementor-column-wrap,
+  .motor-hero-section .elementor-widget-wrap,
+  .motor-hero-section .elementor-widget,
+  .motor-hero-section .elementor-widget-container,
+  .motor-hero-section .elementor-image {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+}
+
+/* Hide any spacer widgets inside motor-hero-section */
+.motor-hero-section .elementor-widget-spacer {
   display: none !important;
 }
 
@@ -43,12 +97,8 @@ html, body {
   text-align: center !important;
   box-sizing: border-box !important;
   padding: 24px 0 !important;
+  margin-top: 0 !important;
   margin-bottom: 40px !important;
-}
-
-/* In the 8 pages where a spacer widget follows the image, hide it so margin-bottom sets the clean 40px gap */
-.motor-hero-section .elementor-widget-image + .elementor-widget-spacer {
-  display: none !important;
 }
 
 /* In 14-kg and 80-kg where next section follows, reset excessive top padding so margin-bottom sets the exact 40px gap */
@@ -73,10 +123,6 @@ html, body {
 
 /* Mobile sizing & spacing (< 768px) */
 @media (max-width: 767px) {
-  .motor-hero-section {
-    padding-top: 0 !important;
-  }
-
   .motor-image-banner-wrap,
   .elementor-widget-image .elementor-image.motor-image-banner-wrap {
     padding: 16px 0 !important;

@@ -54,10 +54,60 @@ var MOTOR_CONFIG = {
     'html, body {',
     '  overflow-x: hidden;',
     '}',
-    '.motor-hero-section {',
-    '  padding-top: 0 !important;',
+    '.elementor-element-00da342,',
+    '.elementor-element-37ec16e,',
+    '.motor-hero-section[data-id="00da342"],',
+    '.motor-hero-section[data-id="37ec16e"] {',
+    '  background-color: #ffffff !important;',
+    '  background: #ffffff !important;',
     '}',
-    '.motor-hero-section > .elementor-container > .elementor-row > .elementor-column > .elementor-column-wrap > .elementor-widget-wrap > .elementor-widget-spacer:first-child {',
+    '.motor-hero-section,',
+    '.elementor-section.motor-hero-section,',
+    '.elementor-top-section.motor-hero-section,',
+    '.motor-hero-section .elementor-container,',
+    '.motor-hero-section .elementor-row,',
+    '.motor-hero-section .elementor-column,',
+    '.motor-hero-section .elementor-column-wrap,',
+    '.motor-hero-section .elementor-widget-wrap,',
+    '.motor-hero-section .elementor-widget,',
+    '.motor-hero-section .elementor-widget-container,',
+    '.motor-hero-section .elementor-image {',
+    '  padding-top: 0 !important;',
+    '  margin-top: 0 !important;',
+    '}',
+    '@media (max-width: 1024px) {',
+    '  .motor-hero-section,',
+    '  .elementor-section.motor-hero-section,',
+    '  .elementor-top-section.motor-hero-section,',
+    '  .motor-hero-section .elementor-container,',
+    '  .motor-hero-section .elementor-row,',
+    '  .motor-hero-section .elementor-column,',
+    '  .motor-hero-section .elementor-column-wrap,',
+    '  .motor-hero-section .elementor-widget-wrap,',
+    '  .motor-hero-section .elementor-widget,',
+    '  .motor-hero-section .elementor-widget-container,',
+    '  .motor-hero-section .elementor-image {',
+    '    padding-top: 0 !important;',
+    '    margin-top: 0 !important;',
+    '  }',
+    '}',
+    '@media (max-width: 767px) {',
+    '  .motor-hero-section,',
+    '  .elementor-section.motor-hero-section,',
+    '  .elementor-top-section.motor-hero-section,',
+    '  .motor-hero-section .elementor-container,',
+    '  .motor-hero-section .elementor-row,',
+    '  .motor-hero-section .elementor-column,',
+    '  .motor-hero-section .elementor-column-wrap,',
+    '  .motor-hero-section .elementor-widget-wrap,',
+    '  .motor-hero-section .elementor-widget,',
+    '  .motor-hero-section .elementor-widget-container,',
+    '  .motor-hero-section .elementor-image {',
+    '    padding-top: 0 !important;',
+    '    margin-top: 0 !important;',
+    '  }',
+    '}',
+    '.motor-hero-section .elementor-widget-spacer {',
     '  display: none !important;',
     '}',
     '.motor-image-banner-wrap,',
@@ -75,10 +125,8 @@ var MOTOR_CONFIG = {
     '  text-align: center !important;',
     '  box-sizing: border-box !important;',
     '  padding: 24px 0 !important;',
+    '  margin-top: 0 !important;',
     '  margin-bottom: 40px !important;',
-    '}',
-    '.motor-hero-section .elementor-widget-image + .elementor-widget-spacer {',
-    '  display: none !important;',
     '}',
     '.motor-hero-section + .elementor-top-section {',
     '  padding-top: 0 !important;',
@@ -97,9 +145,6 @@ var MOTOR_CONFIG = {
     '}',
     '/* Fixed on mobile screens (< 768px) – not reduced by desktop scale */',
     '@media (max-width: 767px) {',
-    '  .motor-hero-section {',
-    '    padding-top: 0 !important;',
-    '  }',
     '  .motor-image-banner-wrap,',
     '  .elementor-widget-image .elementor-image.motor-image-banner-wrap {',
     '    padding: 16px 0 !important;',
@@ -140,6 +185,17 @@ var MOTOR_CONFIG = {
         if (parent && !parent.classList.contains('motor-image-banner-wrap')) {
           parent.classList.add('motor-image-banner-wrap');
         }
+      }
+    });
+
+    var heroSecs = document.querySelectorAll('.motor-hero-section');
+    heroSecs.forEach(function (sec) {
+      sec.style.setProperty('padding-top', '0px', 'important');
+      sec.style.setProperty('margin-top', '0px', 'important');
+      var sid = sec.getAttribute('data-id');
+      if (sid === '00da342' || sid === '37ec16e') {
+        sec.style.setProperty('background-color', '#ffffff', 'important');
+        sec.style.setProperty('background', '#ffffff', 'important');
       }
     });
   }
