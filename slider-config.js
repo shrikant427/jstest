@@ -19,8 +19,8 @@ var SLIDER_CONFIG = {
   padding_right_px: 0,        // Inset slider from the right screen edge
 
   // Mobile Spacing (< 768px)
-  mobile_margin_top_px: 10,
-  mobile_margin_bottom_px: 25,
+  mobile_margin_top_px: 0,
+  mobile_margin_bottom_px: 0,
   mobile_padding_left_px: 0,
   mobile_padding_right_px: 0
 };
