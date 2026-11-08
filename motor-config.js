@@ -20,7 +20,14 @@ var MOTOR_CONFIG = {
   desktop_base_width_px: 366,
   desktop_base_height_px: 400,
   mobile_fixed_width_px: 280,    // Fixed mobile width (stays unchanged)
-  mobile_fixed_height_px: 306    // Fixed mobile height (stays unchanged)
+  mobile_fixed_height_px: 306,   // Fixed mobile height (stays unchanged)
+  banner_padding_top_px: 24,     // Top padding of white background banner
+  banner_padding_bottom_px: 24,  // Bottom padding of white background banner
+  banner_margin_top_px: 0,       // Top margin above banner
+  banner_margin_bottom_px: 40,   // Bottom margin below banner
+  mobile_banner_padding_top_px: 16,
+  mobile_banner_padding_bottom_px: 16,
+  mobile_banner_margin_bottom_px: 25
 };
 
 /* ── Auto-apply to browser ── */
@@ -40,6 +47,14 @@ var MOTOR_CONFIG = {
   var mobW = (MOTOR_CONFIG && (MOTOR_CONFIG.mobile_fixed_width_px || MOTOR_CONFIG.mobile_base_width_px)) || 280;
   var mobH = (MOTOR_CONFIG && (MOTOR_CONFIG.mobile_fixed_height_px || MOTOR_CONFIG.mobile_base_height_px)) || 306;
 
+  var padTop = (MOTOR_CONFIG && MOTOR_CONFIG.banner_padding_top_px != null) ? MOTOR_CONFIG.banner_padding_top_px : 24;
+  var padBottom = (MOTOR_CONFIG && MOTOR_CONFIG.banner_padding_bottom_px != null) ? MOTOR_CONFIG.banner_padding_bottom_px : 24;
+  var marTop = (MOTOR_CONFIG && MOTOR_CONFIG.banner_margin_top_px != null) ? MOTOR_CONFIG.banner_margin_top_px : 0;
+  var marBottom = (MOTOR_CONFIG && MOTOR_CONFIG.banner_margin_bottom_px != null) ? MOTOR_CONFIG.banner_margin_bottom_px : 40;
+  var mobPadTop = (MOTOR_CONFIG && MOTOR_CONFIG.mobile_banner_padding_top_px != null) ? MOTOR_CONFIG.mobile_banner_padding_top_px : 16;
+  var mobPadBottom = (MOTOR_CONFIG && MOTOR_CONFIG.mobile_banner_padding_bottom_px != null) ? MOTOR_CONFIG.mobile_banner_padding_bottom_px : 16;
+  var mobMarBottom = (MOTOR_CONFIG && MOTOR_CONFIG.mobile_banner_margin_bottom_px != null) ? MOTOR_CONFIG.mobile_banner_margin_bottom_px : 25;
+
   var desktopW = Math.round(baseW * scale);
   var desktopH = Math.round(baseH * scale);
 
@@ -50,6 +65,10 @@ var MOTOR_CONFIG = {
     '  --motor-desktop-height: ' + desktopH + 'px;',
     '  --motor-mobile-width: ' + mobW + 'px;',
     '  --motor-mobile-height: ' + mobH + 'px;',
+    '  --motor-banner-padding-top: ' + padTop + 'px;',
+    '  --motor-banner-padding-bottom: ' + padBottom + 'px;',
+    '  --motor-banner-margin-top: ' + marTop + 'px;',
+    '  --motor-banner-margin-bottom: ' + marBottom + 'px;',
     '}',
     'html, body {',
     '  overflow-x: hidden;',
@@ -124,9 +143,9 @@ var MOTOR_CONFIG = {
     '  align-items: center !important;',
     '  text-align: center !important;',
     '  box-sizing: border-box !important;',
-    '  padding: 24px 0 !important;',
-    '  margin-top: 0 !important;',
-    '  margin-bottom: 40px !important;',
+    '  padding: ' + padTop + 'px 0 ' + padBottom + 'px 0 !important;',
+    '  margin-top: ' + marTop + 'px !important;',
+    '  margin-bottom: ' + marBottom + 'px !important;',
     '}',
     '.motor-hero-section + .elementor-top-section {',
     '  padding-top: 0 !important;',
@@ -147,8 +166,8 @@ var MOTOR_CONFIG = {
     '@media (max-width: 767px) {',
     '  .motor-image-banner-wrap,',
     '  .elementor-widget-image .elementor-image.motor-image-banner-wrap {',
-    '    padding: 16px 0 !important;',
-    '    margin-bottom: 25px !important;',
+    '    padding: ' + mobPadTop + 'px 0 ' + mobPadBottom + 'px 0 !important;',
+    '    margin-bottom: ' + mobMarBottom + 'px !important;',
     '  }',
     '  .elementor-widget-image .elementor-image img.motor-product-img,',
     '  .elementor-widget-image .elementor-image img[src*="-motor.png"] {',

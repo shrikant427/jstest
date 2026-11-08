@@ -10,6 +10,10 @@
   --motor-desktop-height: calc(var(--motor-base-height) * var(--motor-scale));
   --motor-mobile-width: 280px;
   --motor-mobile-height: 306px;
+  --motor-banner-padding-top: 24px;
+  --motor-banner-padding-bottom: 24px;
+  --motor-banner-margin-top: 0px;
+  --motor-banner-margin-bottom: 40px;
 }
 
 /* Prevent horizontal scrollbars caused by 100vw breakout */
@@ -96,9 +100,9 @@ html, body {
   align-items: center !important;
   text-align: center !important;
   box-sizing: border-box !important;
-  padding: 24px 0 !important;
-  margin-top: 0 !important;
-  margin-bottom: 40px !important;
+  padding: var(--motor-banner-padding-top, 24px) 0 var(--motor-banner-padding-bottom, 24px) 0 !important;
+  margin-top: var(--motor-banner-margin-top, 0px) !important;
+  margin-bottom: var(--motor-banner-margin-bottom, 40px) !important;
 }
 
 /* In 14-kg and 80-kg where next section follows, reset excessive top padding so margin-bottom sets the exact 40px gap */

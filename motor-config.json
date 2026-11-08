@@ -3,5 +3,12 @@
   "desktop_base_width_px": 366,
   "desktop_base_height_px": 400,
   "mobile_fixed_width_px": 280,
-  "mobile_fixed_height_px": 306
+  "mobile_fixed_height_px": 306,
+  "banner_padding_top_px": 24,
+  "banner_padding_bottom_px": 24,
+  "banner_margin_top_px": 0,
+  "banner_margin_bottom_px": 40,
+  "mobile_banner_padding_top_px": 16,
+  "mobile_banner_padding_bottom_px": 16,
+  "mobile_banner_margin_bottom_px": 25
 }
